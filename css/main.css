@@ -1,0 +1,6 @@
+/* Main stylesheet code4ct by Miguel Jacobs*/
+
+/* Mobile First View */
+.container {
+    display: grid;
+}
