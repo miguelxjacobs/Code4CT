@@ -2,9 +2,16 @@
 
 /* Mobile First View */
 
+//Imports
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//Stylesheets
+//Header
+@import url(../css/header.css);
+//Footer
+@import url(../css/footer.css);
 
 // Sitewide Defaults
 * {
@@ -23,6 +30,9 @@
         grid-column: 2/5;
         margin: auto;
     }
+    .logo:hover {
+        cursor: pointer;
+    }
     .icon {
         grid-column: 7/9;
         margin: auto;
@@ -30,6 +40,9 @@
             width: 30px;
             height: 25px;
         }
+    }
+    .icon:hover {
+        cursor: pointer;
     }
 }
 
@@ -82,6 +95,9 @@
                 color: white;
                 border-radius: 3px;
             }
+            .donate_button:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -122,6 +138,9 @@
         color: white;
         border-radius: 5px;
         margin: auto;
+    }
+    .btn:hover {
+        cursor: pointer;
     }
     //"Start Coding" button
     .startCoding_btn {
@@ -183,12 +202,13 @@
         }
         .readMore_btn {
             color: rgb(81,81,81);
+            background-color: #999;
             border: none;
         }
         //button right width extend
-        .btn:active {
+        .btn:hover {
             cursor: pointer;
-            width: 120%;
+            width: 110%;
         }
     }
     .whoWeAre_images {
@@ -241,7 +261,7 @@
     grid-template-rows: repeat(8, 1fr);
     height: 1500px;
     background-color: black;
-    padding: 10px;
+    padding: 10px 40px 50px 40px;
     //iconSection
     .iconSection, .iconSection_text {
         display: grid;
@@ -252,6 +272,7 @@
         padding: 10px 0 10px 0;
         line-height: 2em;
         h3 {
+            height: 49px;
             font-size: 2em;
             font-weight: 100;
             letter-spacing: 2px;
@@ -261,7 +282,7 @@
     //screen only
     #screen_div {
         grid-column: 1/2;
-        padding-top: 50px;
+        padding-top: 40px;
         #screen {
             height: 60%;
             width: 35%;
@@ -275,7 +296,7 @@
     //speaker only
     #speaker_div {
         grid-column: 1/2;
-        padding-top: 50px;
+        padding-top: 35px;
         #speaker {
             height: 60%;
             width: 35%;
@@ -289,7 +310,7 @@
     //wrench only
     #wrench_div {
         grid-column: 1/2;
-        padding-top: 30px;
+        padding-top: 25px;
         #wrench {
             height: 60%;
             width: 35%;
@@ -303,7 +324,7 @@
     //document only
     #document_div {
         grid-column: 1/2;
-        padding-top: 30px;
+        padding-top: 25px;
         #document {
             height: 60%;
             width: 35%;
