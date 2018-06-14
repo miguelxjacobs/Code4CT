@@ -149,26 +149,30 @@
     text-align: center;
     color: #515151;
     box-shadow: 0 0 5px black; }
-    .whoWeAre_container .whoWeAre_images #image_1 {
+    .whoWeAre_container .whoWeAre_images #image_1_div {
       grid-column: 1/2;
-      grid-row: 1/2;
-      width: 100%;
-      height: 50%; }
-    .whoWeAre_container .whoWeAre_images #image_2 {
+      grid-row: 1/2; }
+      .whoWeAre_container .whoWeAre_images #image_1_div #image_1 {
+        width: 100%;
+        height: 100%; }
+    .whoWeAre_container .whoWeAre_images #image_2_div {
       grid-column: 2/3;
-      grid-row: 1/2;
-      width: 100%;
-      height: 50%; }
-    .whoWeAre_container .whoWeAre_images #image_3 {
+      grid-row: 1/2; }
+      .whoWeAre_container .whoWeAre_images #image_2_div #image_2 {
+        width: 100%;
+        height: 100%; }
+    .whoWeAre_container .whoWeAre_images #image_3_div {
       grid-column: 1/2;
-      grid-row: 2/3;
-      width: 100%;
-      height: 50%; }
-    .whoWeAre_container .whoWeAre_images #image_4 {
+      grid-row: 2/3; }
+      .whoWeAre_container .whoWeAre_images #image_3_div #image_3 {
+        width: 100%;
+        height: 100%; }
+    .whoWeAre_container .whoWeAre_images #image_4_div {
       grid-column: 2/3;
-      grid-row: 2/3;
-      width: 100%;
-      height: 50%; }
+      grid-row: 2/3; }
+      .whoWeAre_container .whoWeAre_images #image_4_div #image_4 {
+        width: 100%;
+        height: 100%; }
 
 .iconSection_container {
   display: grid;
