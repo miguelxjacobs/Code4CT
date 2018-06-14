@@ -180,7 +180,7 @@
   grid-template-rows: repeat(8, 1fr);
   height: 1500px;
   background-color: black;
-  padding: 40px; }
+  padding: 10px; }
   .iconSection_container .iconSection, .iconSection_container .iconSection_text {
     display: grid;
     width: 100%;
@@ -194,31 +194,43 @@
       font-weight: 100;
       letter-spacing: 2px;
       margin: 0; }
-  .iconSection_container #screen {
+  .iconSection_container #screen_div {
     grid-column: 1/2;
-    height: 40%;
-    margin: auto; }
+    padding-top: 50px; }
+    .iconSection_container #screen_div #screen {
+      height: 60%;
+      width: 35%;
+      margin: auto; }
   .iconSection_container .screen_text {
     grid-column: 1/2;
     grid-row: 2/3; }
-  .iconSection_container #speaker {
+  .iconSection_container #speaker_div {
     grid-column: 1/2;
-    height: 45%;
-    margin: auto; }
+    padding-top: 50px; }
+    .iconSection_container #speaker_div #speaker {
+      height: 60%;
+      width: 35%;
+      margin: auto; }
   .iconSection_container .speaker_text {
     grid-column: 1/2;
     grid-row: 4/5; }
-  .iconSection_container #wrench {
+  .iconSection_container #wrench_div {
     grid-column: 1/2;
-    height: 50%;
-    margin: auto; }
+    padding-top: 30px; }
+    .iconSection_container #wrench_div #wrench {
+      height: 60%;
+      width: 35%;
+      margin: auto; }
   .iconSection_container .wrench_text {
     grid-column: 1/2;
     grid-row: 6/7; }
-  .iconSection_container #document {
+  .iconSection_container #document_div {
     grid-column: 1/2;
-    height: 50%;
-    margin: auto; }
+    padding-top: 30px; }
+    .iconSection_container #document_div #document {
+      height: 60%;
+      width: 35%;
+      margin: auto; }
   .iconSection_container .document_text {
     grid-column: 1/2;
     grid-row: 8/9; }

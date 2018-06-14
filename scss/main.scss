@@ -241,7 +241,7 @@
     grid-template-rows: repeat(8, 1fr);
     height: 1500px;
     background-color: black;
-    padding: 40px;
+    padding: 10px;
     //iconSection
     .iconSection, .iconSection_text {
         display: grid;
@@ -259,40 +259,56 @@
         }
     }
     //screen only
-    #screen {
+    #screen_div {
         grid-column: 1/2;
-        height: 40%;
-        margin: auto;
+        padding-top: 50px;
+        #screen {
+            height: 60%;
+            width: 35%;
+            margin: auto;
+        }
     }
     .screen_text {
         grid-column: 1/2;
         grid-row: 2/3;
     }
     //speaker only
-    #speaker {
+    #speaker_div {
         grid-column: 1/2;
-        height: 45%;
-        margin: auto;
+        padding-top: 50px;
+        #speaker {
+            height: 60%;
+            width: 35%;
+            margin: auto;
+        }
     }
     .speaker_text {
         grid-column: 1/2;
         grid-row: 4/5;
     }
     //wrench only
-    #wrench {
+    #wrench_div {
         grid-column: 1/2;
-        height: 50%;
-        margin: auto;
+        padding-top: 30px;
+        #wrench {
+            height: 60%;
+            width: 35%;
+            margin: auto;
+        }
     }
     .wrench_text {
         grid-column: 1/2;
         grid-row: 6/7;
     }
     //document only
-    #document {
+    #document_div {
         grid-column: 1/2;
-        height: 50%;
-        margin: auto;
+        padding-top: 30px;
+        #document {
+            height: 60%;
+            width: 35%;
+            margin: auto;
+        }
     }
     .document_text {
         grid-column: 1/2;
