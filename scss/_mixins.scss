@@ -1,0 +1,14 @@
+/* Mixins stylesheet code4ct by Miguel Jacobs*/
+
+/* Mobile First View */
+//buttons
+@mixin btn {    
+    width: 150px;
+    height: 50px;
+    font-size: 1.45em;
+    border-radius: 5px;
+    margin: auto;
+    &:hover {
+        cursor: pointer;
+    }
+}
