@@ -412,6 +412,9 @@
         grid-row: 3/4;
         padding: 10px;
         text-align: center;
+        hr {
+            width: 30%;
+        }
         .teamMemberName {
             padding: 10px;
         }
@@ -739,7 +742,7 @@
             grid-row: 4/5;
         }
     }
-    // **IGNORE CONTENT! -- Video added is ONLY a placeholder
+    // *DIRECT CONTENT from code4ct!
     .video {
         grid-column: 1/2;
         grid-row: 4/5;
