@@ -489,7 +489,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  height: 1650px;
+  height: 1700px;
   text-align: center; }
   .aboutUs_container .aboutUs {
     grid-column: 1/2;
@@ -530,7 +530,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 550px;
+    height: 600px;
     background-color: #e9e9e9;
     color: #595959; }
     .aboutUs_container .about .heading {
