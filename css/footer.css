@@ -23,7 +23,7 @@
   .footer_container .footer_content {
     grid-column: 1/4;
     grid-row: 2/3;
-    height: 800px;
+    height: 820px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr); }
@@ -33,9 +33,9 @@
       text-align: center;
       font-size: .8em;
       color: gray;
-      padding: 0 50px 10px 50px; }
+      padding: 10px 50px 10px 50px; }
       .footer_container .footer_content .contact h6 {
-        padding: 40px;
+        padding: 10px 40px 40px 40px;
         font-size: 1.1em; }
       .footer_container .footer_content .contact .icon {
         width: 30px;
@@ -68,7 +68,7 @@
       text-align: center;
       font-size: .7em;
       color: gray;
-      padding: 10px 50px 30px 50px; }
+      padding: 10px 50px 20px 50px; }
       .footer_container .footer_content .company h5 {
         padding: 10px 40px 10px 40px;
         font-size: 1.3em; }
@@ -86,7 +86,7 @@
       text-align: center;
       font-size: .7em;
       color: gray;
-      padding: 10px 50px 30px 50px; }
+      padding: 10px 50px 20px 50px; }
       .footer_container .footer_content .support h5 {
         padding: 10px 40px 10px 40px;
         font-size: 1.3em; }
