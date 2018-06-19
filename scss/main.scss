@@ -21,7 +21,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', Helvetica, sans-serif;
+    // font-family: 'Raleway', Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, Arial, Lucida, serif;
     transition: 0.5s;
 }
 
@@ -388,7 +389,7 @@
         }
         p {
             padding: 10px 30px 0 30px;
-            font-size: .8em;
+            font-size: .9em;
             line-height: 20px;
         }
     }
@@ -418,7 +419,9 @@
             padding: 10px;
         }
         .teamMemberDetails {
-            padding: 20px;
+            padding: 20px 70px 20px 70px;
+            font-size: .75em;
+            line-height: 1.8em;
         }
     }
     //team member two
@@ -447,7 +450,9 @@
             padding: 10px;
         }
         .teamMemberDetails {
-            padding: 20px;
+            padding: 20px 70px 20px 70px;
+            font-size: .75em;
+            line-height: 1.8em;
         }
     }
     //team member three
@@ -476,7 +481,9 @@
             padding: 10px;
         }
         .teamMemberDetails {
-            padding: 20px;
+            padding: 20px 70px 20px 70px;
+            font-size: .75em;
+            line-height: 1.8em;
         }
     }
     //team member four
@@ -505,7 +512,9 @@
             padding: 10px;
         }
         .teamMemberDetails {
-            padding: 20px;
+            padding: 20px 70px 20px 70px;
+            font-size: .75em;
+            line-height: 1.8em;
         }
     }
 }
@@ -623,7 +632,7 @@
             border-bottom: 3px solid #dadada;
         }
         p {
-            padding: 10px 30px 40px 30px;
+            padding: 10px 40px 40px 40px;
             font-size: .8em;
             line-height: 20px;
         }
@@ -658,7 +667,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        height: 400px;
+        height: 500px;
         background-color: #e9e9e9;
         color: rgb(89,89,89);
         //heading styling only
@@ -679,7 +688,7 @@
         p {
             grid-column: 1/3;
             grid-row: 2/3;
-            padding: 20px 20px 40px 20px;
+            padding: 20px 20px 20px 20px;
             font-size: .8em;
             line-height: 20px;
         }
@@ -734,7 +743,7 @@
     .video {
         grid-column: 1/2;
         grid-row: 4/5;
-        height: 400px;
+        height: 300px;
         width: 95%;
         margin: auto;
         #about_vid {
