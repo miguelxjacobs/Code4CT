@@ -27,7 +27,7 @@
     .footer_content {
         grid-column: 1/4;
         grid-row: 2/3;
-        height: 820px;
+        height: 850px;
         //new grid for contact details, company links & help/support
         display: grid;
         grid-template-columns: 1fr;
@@ -35,12 +35,13 @@
         .contact {
             grid-column: 1/2;
             grid-row: 1/2;
+            height: 450px;
             text-align: center;
             font-size: .8em;
             color: gray;
             padding: 10px 50px 10px 50px;
             h6 {
-                padding: 10px 40px 40px 40px;
+                padding: 40px;
                 font-size: 1.1em;
             }
             .icon {
@@ -80,10 +81,11 @@
         .company {
             grid-column: 1/2;
             grid-row: 2/3;
+            height: 150px;
             text-align: center;
             font-size: .7em;
             color: gray;
-            padding: 10px 50px 20px 50px;
+            padding: 0 50px 0 50px;
             h5 {
                 padding: 10px 40px 10px 40px;
                 font-size: 1.3em;
@@ -103,10 +105,11 @@
         .support {
             grid-column: 1/2;
             grid-row: 3/4;
+            height: 150px;
             text-align: center;
             font-size: .7em;
             color: gray;
-            padding: 10px 50px 20px 50px;
+            padding: 0 50px 0 50px;
             h5 {
                 padding: 10px 40px 10px 40px;
                 font-size: 1.3em;

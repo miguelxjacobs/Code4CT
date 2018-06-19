@@ -23,19 +23,20 @@
   .footer_container .footer_content {
     grid-column: 1/4;
     grid-row: 2/3;
-    height: 820px;
+    height: 850px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr); }
     .footer_container .footer_content .contact {
       grid-column: 1/2;
       grid-row: 1/2;
+      height: 450px;
       text-align: center;
       font-size: .8em;
       color: gray;
       padding: 10px 50px 10px 50px; }
       .footer_container .footer_content .contact h6 {
-        padding: 10px 40px 40px 40px;
+        padding: 40px;
         font-size: 1.1em; }
       .footer_container .footer_content .contact .icon {
         width: 30px;
@@ -65,10 +66,11 @@
     .footer_container .footer_content .company {
       grid-column: 1/2;
       grid-row: 2/3;
+      height: 150px;
       text-align: center;
       font-size: .7em;
       color: gray;
-      padding: 10px 50px 20px 50px; }
+      padding: 0 50px 0 50px; }
       .footer_container .footer_content .company h5 {
         padding: 10px 40px 10px 40px;
         font-size: 1.3em; }
@@ -83,10 +85,11 @@
     .footer_container .footer_content .support {
       grid-column: 1/2;
       grid-row: 3/4;
+      height: 150px;
       text-align: center;
       font-size: .7em;
       color: gray;
-      padding: 10px 50px 20px 50px; }
+      padding: 0 50px 0 50px; }
       .footer_container .footer_content .support h5 {
         padding: 10px 40px 10px 40px;
         font-size: 1.3em; }
