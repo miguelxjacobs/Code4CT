@@ -413,7 +413,14 @@
         padding: 10px;
         text-align: center;
         hr {
+            margin: auto;
             width: 30%;
+        }
+        &:hover {        
+            hr {
+                margin: auto;
+                width: 50%;        
+            }
         }
         .teamMemberName {
             padding: 10px;
@@ -446,6 +453,16 @@
         grid-row: 5/6;
         padding: 10px;
         text-align: center;
+        hr {
+            margin: auto;
+            width: 30%;
+        }
+        &:hover {        
+            hr {
+                margin: auto;
+                width: 50%;        
+            }
+        }
         .teamMemberName {
             padding: 10px;
         }
@@ -477,6 +494,16 @@
         grid-row: 7/8;
         padding: 10px;
         text-align: center;
+        hr {
+            margin: auto;
+            width: 30%;
+        }
+        &:hover {        
+            hr {
+                margin: auto;
+                width: 50%;        
+            }
+        }
         .teamMemberName {
             padding: 10px;
         }
@@ -508,6 +535,16 @@
         grid-row: 9/10;
         padding: 10px;
         text-align: center;
+        hr {
+            margin: auto;
+            width: 30%;
+        }
+        &:hover {        
+            hr {
+                margin: auto;
+                width: 50%;        
+            }
+        }
         .teamMemberName {
             padding: 10px;
         }

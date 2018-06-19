@@ -308,6 +308,12 @@
     grid-row: 3/4;
     padding: 10px;
     text-align: center; }
+    .teamSection_container .infoOne hr {
+      margin: auto;
+      width: 30%; }
+    .teamSection_container .infoOne:hover hr {
+      margin: auto;
+      width: 50%; }
     .teamSection_container .infoOne .teamMemberName {
       padding: 10px; }
     .teamSection_container .infoOne .teamMemberPosition {
@@ -332,6 +338,12 @@
     grid-row: 5/6;
     padding: 10px;
     text-align: center; }
+    .teamSection_container .infoTwo hr {
+      margin: auto;
+      width: 30%; }
+    .teamSection_container .infoTwo:hover hr {
+      margin: auto;
+      width: 50%; }
     .teamSection_container .infoTwo .teamMemberName {
       padding: 10px; }
     .teamSection_container .infoTwo .teamMemberPosition {
@@ -356,6 +368,12 @@
     grid-row: 7/8;
     padding: 10px;
     text-align: center; }
+    .teamSection_container .infoThree hr {
+      margin: auto;
+      width: 30%; }
+    .teamSection_container .infoThree:hover hr {
+      margin: auto;
+      width: 50%; }
     .teamSection_container .infoThree .teamMemberName {
       padding: 10px; }
     .teamSection_container .infoThree .teamMemberPosition {
@@ -380,6 +398,12 @@
     grid-row: 9/10;
     padding: 10px;
     text-align: center; }
+    .teamSection_container .infoFour hr {
+      margin: auto;
+      width: 30%; }
+    .teamSection_container .infoFour:hover hr {
+      margin: auto;
+      width: 50%; }
     .teamSection_container .infoFour .teamMemberName {
       padding: 10px; }
     .teamSection_container .infoFour .teamMemberPosition {
