@@ -588,10 +588,10 @@
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 4px; }
     .form_container form ::placeholder {
-      padding: 10px 0 10px 10px;
       text-align: center; }
     .form_container form #message {
-      height: 180px; }
+      height: 180px;
+      padding-top: 20px; }
     .form_container form .btn {
       width: 150px;
       height: 50px;

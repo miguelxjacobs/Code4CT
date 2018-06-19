@@ -6,6 +6,7 @@
     display: grid;
     height: 80px;
     grid-template-columns: repeat(8, 1fr);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     .logo {
         grid-column: 2/5;
         height: 50px;
