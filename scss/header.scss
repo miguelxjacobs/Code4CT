@@ -26,6 +26,10 @@
         .hamburger_icon {     
             width: 30px;
             height: 25px;
+            //Displays navbar
+            &:hover #nav_wrapper {
+                display: block;
+            }
         }
     }
     .icon:hover {

@@ -21,6 +21,8 @@
     .header .icon .hamburger_icon {
       width: 30px;
       height: 25px; }
+      .header .icon .hamburger_icon:hover #nav_wrapper {
+        display: block; }
   .header .icon:hover {
     cursor: pointer; }
 

@@ -9,13 +9,13 @@
 
 //Stylesheets
 //Header
-@import url(../css/header.css);
+@import url(header.css);
 //Footer
-@import url(../css/footer.css);
+@import url(footer.css);
 //Responsive Design
-@import url(..css/_responsive.css);
+@import url(_responsive.css);
 //Mixins
-@import url(../css/_mixins.css);
+@import url(css/_mixins.css);
 
 // Sitewide Defaults
 * {
@@ -29,14 +29,14 @@
 //Introduction container
 .lore_container {
     display: grid;
-    height: 555px;
+    height: 470px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background-color: rgb(42,42,42);
-    // background-image: url(../images/homepage_bg.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    padding: 50px 0 40px 0;
+    background-image: url(../images/homepage_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 40px 0;
     h2 {
         letter-spacing: 2px;
         font-size: 1.4em;
@@ -44,14 +44,14 @@
     }
     //Introduction box
     .lore {
-        grid-column: 2/5;
+        grid-column: 1/6;
         grid-row: 1/2;
         font-size: .9em;
         line-height: 1.7em;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         color: white;
-        padding: 10px;
+        padding: 30px;
         background-color: rgba(0,0,0, 0.3);
     }
     //Shared styling for homepage buttons
