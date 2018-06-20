@@ -82,12 +82,6 @@
       padding: 15px 15px 30px 15px;
       font-size: .8em;
       line-height: 20px; }
-    .whoWeAre_container .whoWeAre_text hr {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      height: 2px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border: 1px white solid; }
     .whoWeAre_container .whoWeAre_text .btn {
       width: 150px;
       height: 50px;
