@@ -484,13 +484,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  height: 1700px;
+  height: 1540px;
   text-align: center; }
   .aboutUs_container .aboutUs {
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 40px 20px 0 20px;
-    height: 350px; }
+    height: 350px;
+    }
     .aboutUs_container .aboutUs h3 {
       padding-bottom: 30px; }
     .aboutUs_container .aboutUs .first {
@@ -514,7 +515,7 @@
   .aboutUs_container .about_image {
     grid-column: 1/2;
     grid-row: 2/3;
-    height: 400px;
+    height: 250px;
     width: 100%; }
     .aboutUs_container .about_image #image {
       height: 100%;
