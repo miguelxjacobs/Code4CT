@@ -15,6 +15,7 @@
         width: 100%;
         position: relative;
         margin: auto;
+        overflow: hidden;
         @keyframes slide_effect {
             0% {
                 transform: translateX(0);

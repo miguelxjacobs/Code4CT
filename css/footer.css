@@ -12,7 +12,8 @@
     height: 80px;
     width: 100%;
     position: relative;
-    margin: auto; }
+    margin: auto;
+    overflow: hidden; }
 @keyframes slide_effect {
   0% {
     transform: translateX(0); }
