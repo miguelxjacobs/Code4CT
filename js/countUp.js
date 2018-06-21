@@ -2,56 +2,59 @@
 
 /* Declarations */
 //count defined as integer and assigned zero to start from
-let count = -10;
+let countC = -10;
+let countG = -10;
+let countP = -10;
+let countH = -10;
 
 //sets interval to how often timer will update in milliseconds
-let counterCoffee = setInterval(timerCoffee, 1);
+const counterCoffee = setInterval(timerCoffee, 1);
 
-let counterGirls = setInterval(timerGirls, 1);
-let counterProj = setInterval(timerProj, 1);
+const counterGirls = setInterval(timerGirls, 1);
+const counterProj = setInterval(timerProj, 1);
 const counterHours = setInterval(timerHours, 1);
 
 //Cups Of Coffee
 function timerCoffee() {
     //enables count iteration
-    count++;
+    countC++;
 
     //setting parameters to enable count to stop at desired number
-    if(count >= 3001) {
+    if(countC > 3000) {
         clearInterval(counterCoffee);
 
         return;
     }
     //pushes values to HTML page
-    document.getElementById('coffeeCount').innerHTML = count + "+";
+    document.getElementById('coffeeCount').innerHTML = countC + "+";
 }
 
 //Number Of Girls
 function timerGirls() {
-    count=count+1;
-    if(count >= 780){
+    countG++;
+    if(countG > 780){
         clearInterval(counterGirls);
         return;
     }
-    document.getElementById('girlsCount').innerHTML = count + "+";
+    document.getElementById('girlsCount').innerHTML = countG + "+";
 }
 
 //Projects Completed
 function timerProj() {
-    count++;
-    if(count >= 3120) {
+    countP++;
+    if(countP > 3120) {
         clearInterval(counterProj);
         return;
     }
-    document.getElementById('projectsCount').innerHTML = count + "+";
+    document.getElementById('projectsCount').innerHTML = countP + "+";
 }
 
 //Hours Of Coding
 function timerHours() {
-    count++;
-    if(count >= 8760) {
+    countH++;
+    if(countH > 8760) {
         clearInterval(counterProj);
         return;
     }
-    document.getElementById('hoursCount').innerHTML = count + "+";
+    document.getElementById('hoursCount').innerHTML = countH + "+";
 }
