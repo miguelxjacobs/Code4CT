@@ -30,12 +30,13 @@
     cursor: pointer; }
 
 #nav_wrapper {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(9, 1fr);
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-top: -705px; }
   #nav_wrapper nav {
     grid-column: 2/9;
     height: 700px;

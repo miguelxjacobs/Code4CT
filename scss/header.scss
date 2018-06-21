@@ -42,15 +42,14 @@
 
 // Navbar
 #nav_wrapper {
-    //*Disables navbar until functionality to burgermenu button is added
-    display: none;
     //Enable bottom display after functionality added
-    // display: grid;
+    display: grid;
     grid-template-columns: repeat(9, 1fr);
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
+    margin-top: -705px;
     nav {
         grid-column: 2/9;
         height: 700px;

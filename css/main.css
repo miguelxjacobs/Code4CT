@@ -103,16 +103,13 @@
       color: white;
       border-radius: 5px;
       margin: auto; }
-    .whoWeAre_container .whoWeAre_text #rm_btn {
-      position: rel;
-      top: 0;
-      left: 0; }
-      .whoWeAre_container .whoWeAre_text #rm_btn .readMore_btn {
-        color: #515151;
-        background-color: #999;
-        border: none; }
+    .whoWeAre_container .whoWeAre_text #rm_btn .readMore_btn {
+      color: #515151;
+      background-color: #999;
+      border: none; }
     .whoWeAre_container .whoWeAre_text .btn:hover {
       cursor: pointer;
+      width: 170px;
       animation: expand .3s linear 1; }
 @keyframes expand {
   0% {

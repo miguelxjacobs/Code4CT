@@ -147,9 +147,6 @@
             @include buttonStyle;      
         }
         #rm_btn {
-            position: rel;
-            top: 0;
-            left: 0;          
             .readMore_btn {
                 color: rgb(81,81,81);
                 background-color: #999;
@@ -159,6 +156,7 @@
         //button right width extend
         .btn:hover {
             cursor: pointer;
+            width: 170px;
             animation: expand .3s linear 1;
             @keyframes expand {
                 0% {
