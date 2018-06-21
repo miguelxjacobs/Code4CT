@@ -14,7 +14,7 @@ menu.onclick = function() {
         open = false;
     }
     else {
-        nav.style.marginTop = "-705px";
+        nav.style.marginTop = "-710px";
         open = true;
     }
     
