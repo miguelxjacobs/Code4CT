@@ -4,11 +4,14 @@
   display: grid;
   height: 80px;
   grid-template-columns: repeat(8, 1fr);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
+  z-index: 2; }
   .header .logo {
-    grid-column: 2/5;
-    height: 50px;
-    width: 160px;
+    grid-column: 1/4;
+    height: 30px;
+    width: 100px;
     margin: auto; }
     .header .logo #logo {
       width: 100%;
@@ -39,9 +42,14 @@
     font-size: .8em;
     font-weight: bold;
     background-color: white;
-    color: #777;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    animation: navTransition .4s linear 1;
     border-top: 3px solid #1dc1c1; }
+@keyframes navTransition {
+  0% {
+    transform: translateY(-700px); }
+  100% {
+    transform: translateY(0); } }
     #nav_wrapper nav ul {
       padding: 10px; }
       #nav_wrapper nav ul li {
@@ -49,6 +57,9 @@
         height: 43px;
         line-height: 60px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+        #nav_wrapper nav ul li a {
+          text-decoration: none;
+          color: #777; }
       #nav_wrapper nav ul .title_li {
         padding-left: 20px; }
       #nav_wrapper nav ul .secondary_li {

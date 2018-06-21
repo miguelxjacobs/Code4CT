@@ -18,12 +18,12 @@
     <header class="header">
         <!-- Logo -->
         <div class="logo">
-            <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo">
+            <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo" draggable="false">
         </div>
 
         <!-- Hamburger icon -->
         <div class="icon">
-            <img class="hamburger_icon" width="100%" src="images/icons/hamburger_icon.png" alt="menu">
+            <img class="hamburger_icon" width="100%" src="images/icons/hamburger_icon.png" alt="menu" draggable="false">
         </div>
     </header>
 
@@ -31,19 +31,19 @@
     <div id="nav_wrapper">
         <nav>
             <ul>
-                <li class="title_li">Start Coding</li>
-                <li class="title_li">Home</li>
-                <li class="secondary_li">Courses</li>
-                <li class="tertiary_li">Our Course</li>
-                <li class="tertiary_li">Curriculum</li>
-                <li class="title_li">Support</li>
-                <li class="secondary_li">About</li>
-                <li class="tertiary_li">About Us</li>
-                <li class="tertiary_li">Impact</li>
-                <li class="tertiary_li">WhyICode</li>
-                <li class="tertiary_li">Team</li>
-                <li class="title_li">Blog</li>
-                <li class="title_li">Contact</li>
+                <li class="title_li"><a href="courses.html">Start Coding</a></li>
+                <li class="title_li"><a href="index.html">Home</a></li>
+                <li class="secondary_li"><a href="courses.html">Courses</a></li>
+                <li class="tertiary_li"><a href="courses.html">Our Course</a></li>
+                <li class="tertiary_li"><a href="courses.html">Curriculum</a></li>
+                <li class="title_li"><a href="contact.html">Support</a></li>
+                <li class="secondary_li"><a href="about.html">About</a></li>
+                <li class="tertiary_li"><a href="about.html">About Us</a></li>
+                <li class="tertiary_li"><a href="portfolio.html">Impact</a></li>
+                <li class="tertiary_li"><a href="portfolio.html">WhyICode</a></li>
+                <li class="tertiary_li"><a href="about.html">Team</a></li>
+                <li class="title_li"><a href="portfolio.html">Blog</a></li>
+                <li class="title_li"><a href="contact.html">Contact</a></li>
                 <li class="donate_button">Donate</li>
             </ul>
         </nav>
@@ -120,72 +120,87 @@
 
     <!-- All Footers Below -->
     <footer class="footer_container">
-            <div class="footer_carousel">
-                <!-- Carousel imported via scss -->
-            </div>
-            <div class="footer_content">
-                <!-- Contact details -->
-                <div class="contact">
-                    <h6>Simply contact us via any of our communication channels</h6>
+        <div class="footer_carousel">
+            <!-- Carousel imported via scss -->
+            <div id="carousel"></div>
+        </div>
+        <div class="footer_content">
+            <!-- Contact details -->
+            <div class="contact">
+                <h6>Simply contact us via any of our communication channels</h6>
     
-                    <div class="icon">
+                <div class="icon">
+                    <a href="contact.html">
                         <img id="phone" src="images/icons/contact_icons_phone.png" alt="" draggable="false">
-                    </div>
-                    <p class="phN">021 685 0991</p>
-    
-                    <div class="icon">
-                        <img id="email" src="images/icons/contact_icons_email.png" alt="" draggable="false">
-                    </div>
-                    <p class="email">info@code4ct.com</p>
-    
-                    <div class="icon">
-                        <img id="location" src="images/icons/contact_icons_location.png" alt="" draggable="false">
-                    </div>
-                    <p class="address">Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                    </a>
                 </div>
+                <p class="phN">021 685 0991</p>
     
-                <!-- Company links -->
-                <div class="company">
-                    <h5>Company</h5>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Affiliate program</a></li>
-                    </ul>
+                <div class="icon">
+                    <a href="contact.html">
+                        <img id="phone" src="images/icons/contact_icons_email.png" alt="" draggable="false">
+                    </a>
                 </div>
+                <p class="email">info@code4ct.com</p>
     
-                <!-- Help & Support -->
-                <div class="support">
-                    <h5>Help & Support</h5>
-                    <ul>
-                        <li><a href="#">Help centre</a></li>
-                        <li><a href="#">Free simple template</a></li>
-                        <li><a href="#">Refund policy</a></li>
-                        <li><a href="#">Report span</a></li>
-                    </ul>
+                <div class="icon">
+                    <a href="contact.html">
+                        <img id="phone" src="images/icons/contact_icons_location.png" alt="" draggable="false">
+                    </a>
                 </div>
+                <p class="address">Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
             </div>
     
-            <div class="footer_absolute">
-                <p id="copyright">
-                    copyright © 2017 PRIVACY POLICY
-                </p>
-                <P id="followUs">
-                    follow us: "facebook" "twitter" "pinterest" "google+" "linkedin" "skype"
-                </P>
+            <!-- Company links -->
+            <div class="company">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="about.html">Contact us</a></li>
+                    <li><a href="about.html">Blog</a></li>
+                    <li><a href="about.html">Testimonials</a></li>
+                    <li><a href="about.html">Affiliate program</a></li>
+            </ul>
             </div>
-        </footer>
+    
+            <!-- Help & Support -->
+            <div class="support">
+                <h5>Help & Support</h5>
+                <ul>
+                    <li><a href="contact.html">Help centre</a></li>
+                    <li><a href="contact.html">Free simple template</a></li>
+                    <li><a href="contact.html">Refund policy</a></li>
+                    <li><a href="contact.html">Report span</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer_absolute">
+            <p id="copyright">
+                copyright © 2017 PRIVACY POLICY
+            </p>
+            <p id="followUs">
+                follow us: 
+                <a href="www.facebook.com">facebook</a> |
+                <a href="www.twitter.com">twitter</a> |
+                <a href="www.pinterest.com">pinterest</a> |
+                <a href="www.google+.com">google+</a> |
+                <a href="www.linkedin.com">linkedin</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script type="text/javascript" src="js/buttons.js"></script>
         
 
-        <!-- Google Map -->
-        <!-- API Key -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <!-- Google Map -->
+    <!-- API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
-        <!-- Callback -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <!-- Callback -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
-        <link rel="text/script" href="js/map.js">
-    </body>
-    </html>
+    <link rel="text/script" href="js/map.js">
+</body>
+</html>

@@ -45,17 +45,33 @@
     margin: auto; }
   .lore_container .btn:hover {
     cursor: pointer; }
-  .lore_container .startCoding_btn {
+  .lore_container #sc_btn {
     grid-column: 2/5;
     grid-row: 2/3;
-    border: 2px #e38f84 solid;
-    background-color: #e38f84; }
-  .lore_container .aboutUs_btn {
+    margin: auto; }
+    .lore_container #sc_btn .startCoding_btn {
+      border: 2px #e38f84 solid;
+      background-color: #e38f84; }
+  .lore_container #au_btn {
     grid-column: 2/5;
     grid-row: 3/4;
-    border: 2px white solid;
-    background-color: transparent; }
+    margin: auto; }
+    .lore_container #au_btn .aboutUs_btn {
+      border: 2px white solid;
+      background-color: transparent; }
 
+.size {
+  width: 100%;
+  height: 100%; }
+  .size:hover {
+    animation: animate .5s linear 1; }
+@keyframes animate {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
 .whoWeAre_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -87,13 +103,24 @@
       color: white;
       border-radius: 5px;
       margin: auto; }
-    .whoWeAre_container .whoWeAre_text .readMore_btn {
-      color: #515151;
-      background-color: #999;
-      border: none; }
+    .whoWeAre_container .whoWeAre_text #rm_btn {
+      position: rel;
+      top: 0;
+      left: 0; }
+      .whoWeAre_container .whoWeAre_text #rm_btn .readMore_btn {
+        color: #515151;
+        background-color: #999;
+        border: none; }
     .whoWeAre_container .whoWeAre_text .btn:hover {
       cursor: pointer;
-      width: 110%; }
+      animation: expand .3s linear 1; }
+@keyframes expand {
+  0% {
+    position: static;
+    transform: translate(0); }
+  100% {
+    position: static;
+    transform: translate(20px); } }
   .whoWeAre_container .whoWeAre_images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -105,31 +132,23 @@
     .whoWeAre_container .whoWeAre_images #image_1_div {
       grid-column: 1/2;
       grid-row: 1/2;
-      height: 200px; }
-      .whoWeAre_container .whoWeAre_images #image_1_div #image_1 {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .whoWeAre_container .whoWeAre_images #image_2_div {
       grid-column: 2/3;
       grid-row: 1/2;
-      height: 200px; }
-      .whoWeAre_container .whoWeAre_images #image_2_div #image_2 {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .whoWeAre_container .whoWeAre_images #image_3_div {
       grid-column: 1/2;
       grid-row: 2/3;
-      height: 200px; }
-      .whoWeAre_container .whoWeAre_images #image_3_div #image_3 {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .whoWeAre_container .whoWeAre_images #image_4_div {
       grid-column: 2/3;
       grid-row: 2/3;
-      height: 200px; }
-      .whoWeAre_container .whoWeAre_images #image_4_div #image_4 {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
 
 .iconSection_container {
   display: grid;
@@ -154,25 +173,25 @@
       letter-spacing: 2px;
       margin: 0; }
   .iconSection_container #screen_div {
-    padding-top: 40px;
+    padding-top: 25px;
     height: 100px;
     width: 250px;
     margin: auto; }
-    .iconSection_container #screen_div #screen {
+    .iconSection_container #screen_div .icon {
       height: 100%;
-      width: 50%; }
+      width: 40%; }
   .iconSection_container .screen_text {
     grid-row: 2/3; }
     .iconSection_container .screen_text p {
       padding: 0 40px; }
   .iconSection_container #speaker_div {
-    padding-top: 35px;
+    padding-top: 25px;
     height: 100px;
     width: 250px;
     margin: auto; }
-    .iconSection_container #speaker_div #speaker {
+    .iconSection_container #speaker_div .icon {
       height: 100%;
-      width: 50%; }
+      width: 40%; }
   .iconSection_container .speaker_text {
     grid-row: 4/5; }
     .iconSection_container .speaker_text p {
@@ -182,7 +201,7 @@
     height: 100px;
     width: 250px;
     margin: auto; }
-    .iconSection_container #wrench_div #wrench {
+    .iconSection_container #wrench_div .icon {
       height: 100%;
       width: 40%; }
   .iconSection_container .wrench_text {
@@ -194,7 +213,7 @@
     height: 100px;
     width: 250px;
     margin: auto; }
-    .iconSection_container #document_div #document {
+    .iconSection_container #document_div .icon {
       height: 100%;
       width: 40%; }
   .iconSection_container .document_text {
@@ -234,38 +253,28 @@
     .portfolioSection_container .portfolioSection_images #image_one {
       grid-column: 1/2;
       grid-row: 1/2;
-      height: 200px; }
-      .portfolioSection_container .portfolioSection_images #image_one #img_one {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_two {
       grid-column: 2/3;
       grid-row: 1/2;
-      height: 200px; }
-      .portfolioSection_container .portfolioSection_images #image_two #img_two {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_three {
       grid-column: 1/2;
       grid-row: 2/3;
-      height: 200px; }
-      .portfolioSection_container .portfolioSection_images #image_three #img_three {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_four {
       grid-column: 2/3;
       grid-row: 2/3;
-      height: 200px; }
-      .portfolioSection_container .portfolioSection_images #image_four #img_four {
-        width: 100%;
-        height: 100%; }
+      height: 200px;
+      overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_large {
       grid-column: 1/3;
       grid-row: 3/4;
-      height: 300px; }
-      .portfolioSection_container .portfolioSection_images #image_large #img_l {
-        width: 100%;
-        height: 100%; }
+      height: 300px;
+      overflow: hidden; }
 
 .teamSection_container {
   display: grid;
@@ -490,8 +499,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 40px 20px 0 20px;
-    height: 350px;
-    }
+    height: 350px; }
     .aboutUs_container .aboutUs h3 {
       padding-bottom: 30px; }
     .aboutUs_container .aboutUs .first {
@@ -589,6 +597,13 @@
 
 /* COURSES PAGE STYLING */
 /* PORTFOLIO PAGE STYLING */
+.lightbox_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: 500px;
+  background-color: gray; }
+
 /* CONTACT PAGE STYLING */
 .form_container {
   display: grid;
