@@ -25,3 +25,5 @@ function myMap() {
     //allows map to be created within the div with the id of "map"
 //     let map = new google.maps.Map(document.getElementById("map"), mapSettings);
 // }
+
+

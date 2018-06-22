@@ -18,7 +18,9 @@
     <header class="header">
         <!-- Logo -->
         <div class="logo">
-            <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo" draggable="false">
+            <a href="index.html">                
+                <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo" draggable="false">
+            </a>
         </div>
 
         <!-- Hamburger icon -->
@@ -113,10 +115,17 @@
 
     <div class="map_container">
         <!-- Map with location to Code4CT -->
-        <section class="map">
-
-        </section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638235434464!2d18.44653128035154!3d-33.924709229490425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1529675673119" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+
+    <!-- backToTop container -->
+    <!-- <div id="backToTop" onclick="scrollTop()">
+        <img id="toTop" src="images/icons/toTop.png" alt="">
+    </div> -->
+
+    <button id="backToTop" onclick="scrollTop()">
+        <img id="toTop" src="images/icons/toTop.png" alt="">
+    </button>
 
     <!-- All Footers Below -->
     <footer class="footer_container">
@@ -198,6 +207,6 @@
     <!-- API Key -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
-    <link rel="text/script" href="js/map.js">
+    <script type="text/script" src="js/map.js"></script>
 </body>
 </html>
