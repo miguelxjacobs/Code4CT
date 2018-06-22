@@ -43,8 +43,8 @@
   margin-top: -710px; }
   #nav_wrapper nav {
     grid-column: 2/9;
-    height: 535px;
-    font-size: .8em;
+    height: 450px;
+    font-size: .7em;
     font-weight: bold;
     background-color: white;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
@@ -59,8 +59,8 @@
       padding: 10px; }
       #nav_wrapper nav ul li {
         display: block;
-        height: 35px;
-        line-height: 30px;
+        height: 30px;
+        line-height: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
         #nav_wrapper nav ul li a {
           text-decoration: none;
@@ -73,7 +73,7 @@
       #nav_wrapper nav ul .tertiary_li {
         padding-left: 40px; }
       #nav_wrapper nav ul .donate_button {
-        height: 45px;
+        height: 33px;
         line-height: 40px;
         font-size: 1.1em;
         border: none;
