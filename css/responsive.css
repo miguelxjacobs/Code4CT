@@ -1,0 +1,779 @@
+/* Responsive stylesheet code4ct by Miguel Jacobs*/
+@media only screen and (min-width: 768px) {
+  /* ----- INDEX PAGE ----- */
+  .lore_container {
+    display: grid;
+    height: 350px;
+    position: relative;
+    top: 80px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0; }
+    .lore_container .lore {
+      grid-column: 2/5;
+      grid-row: 1/6; }
+    .lore_container #sc_btn {
+      grid-column: 2/5;
+      grid-row: 4/5; }
+    .lore_container #au_btn {
+      grid-column: 2/5;
+      grid-row: 5/6; }
+
+  .whoWeAre_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 400px;
+    position: relative;
+    top: 80px; }
+    .whoWeAre_container .whoWeAre_text {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      height: 350px;
+      text-align: left; }
+      .whoWeAre_container .whoWeAre_text #rm_btn {
+        margin: auto; }
+    .whoWeAre_container .whoWeAre_images {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+
+  .iconSection_container {
+    display: grid;
+    height: 720px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 0; }
+    .iconSection_container .iconSection, .iconSection_container .iconSection_text {
+      display: grid;
+      width: 200px;
+      font-size: .8em;
+      padding: 10px 20px 40px 20px;
+      margin: auto; }
+    .iconSection_container .screen {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 50%; }
+    .iconSection_container #screen_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSection_container #screen_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .screen_text {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+      .iconSection_container .screen_text p {
+        padding: 0 40px; }
+    .iconSection_container .speaker {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 50%; }
+    .iconSection_container #speaker_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSection_container #speaker_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .speaker_text {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+      .iconSection_container .speaker_text p {
+        padding: 0 40px; }
+    .iconSection_container .wrench {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      width: 50%; }
+    .iconSection_container #wrench_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSection_container #wrench_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .wrench_text {
+      grid-column: 1/2;
+      grid-row: 4/5; }
+      .iconSection_container .wrench_text p {
+        padding: 0 40px; }
+    .iconSection_container .document {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      width: 50%; }
+    .iconSection_container #document_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSection_container #document_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .document_text {
+      grid-column: 2/3;
+      grid-row: 4/5; }
+      .iconSection_container .document_text p {
+        padding: 0 40px; }
+
+  .portfolioSection_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 700px;
+    position: relative;
+    top: 80px; }
+    .portfolioSection_container .portfolioSection_text {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 0px 20px 20px 20px;
+      height: 300px; }
+      .portfolioSection_container .portfolioSection_text h3 {
+        padding: 50px 0 50px 30px; }
+    .portfolioSection_container .portfolioSection_images {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+      .portfolioSection_container .portfolioSection_images #image_one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 200px; }
+      .portfolioSection_container .portfolioSection_images #image_two {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 200px; }
+      .portfolioSection_container .portfolioSection_images #image_three {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 200px; }
+      .portfolioSection_container .portfolioSection_images #image_four {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 200px; }
+    .portfolioSection_container #image_large {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      height: 300px; }
+
+  .teamSection_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1450px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 80px; }
+    .teamSection_container .teamSection_text {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 40px 20px 20px 20px; }
+      .teamSection_container .teamSection_text h3 {
+        padding-left: 150px; }
+      .teamSection_container .teamSection_text p {
+        padding: 10px 150px 0 150px;
+        font-size: .9em;
+        line-height: 20px; }
+    .teamSection_container .photoOne {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSection_container .infoOne {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSection_container .infoOne hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoOne:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoOne .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoOne .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoOne .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoTwo {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSection_container .infoTwo {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSection_container .infoTwo hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoTwo:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoTwo .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoTwo .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoTwo .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoThree {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSection_container .infoThree {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSection_container .infoThree hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoThree:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoThree .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoThree .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoThree .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoFour {
+      grid-column: 2/3;
+      grid-row: 5/6;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSection_container .infoFour {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSection_container .infoFour hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoFour:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoFour .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoFour .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoFour .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+
+  .counter_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 150px;
+    position: relative;
+    top: 80px;
+    padding: 0; }
+    .counter_container .coffees {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .counter_container .girls {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .counter_container .projects {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .counter_container .hours {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+
+  /* ----- ABOUT PAGE ----- */
+  .aboutUs_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 900px;
+    position: relative;
+    top: 80px;
+    text-align: justify; }
+    .aboutUs_container .aboutUs {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 40px 20px 0 60px; }
+      .aboutUs_container .aboutUs h3 {
+        padding-bottom: 30px; }
+      .aboutUs_container .aboutUs p {
+        padding-left: 0; }
+    .aboutUs_container .about_image {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      height: 100%;
+      width: 100%; }
+    .aboutUs_container .about {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      height: 500px; }
+      .aboutUs_container .about .heading {
+        padding: 20px 0 40px 20px; }
+      .aboutUs_container .about p {
+        font-size: .7em; }
+    .aboutUs_container .video {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 100%;
+      width: 100%; }
+
+  /* ----- COURSES PAGE ----- */
+  /* ----- PORTFOLIO PAGE ----- */
+  .lightbox_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 50px;
+    position: relative;
+    top: 80px;
+    border-bottom: 0.5px solid #e38f84; }
+    .lightbox_container .lightbox {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 70px 1fr 70px;
+      grid-template-rows: repeat(2, 1fr); }
+      .lightbox_container .lightbox .direction {
+        height: 40px;
+        width: 40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 0.5px solid black;
+        border-radius: 25px;
+        box-shadow: 0 0 10px #e38f8450;
+        z-index: 5;
+        padding: 5px;
+        background-color: #e38f8470;
+        margin: auto; }
+        .lightbox_container .lightbox .direction:hover {
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.2); }
+      .lightbox_container .lightbox .left {
+        grid-column: 1/2;
+        grid-row: 1/3; }
+        .lightbox_container .lightbox .left img {
+          height: 100%;
+          width: 100%;
+          margin: auto; }
+      .lightbox_container .lightbox .right {
+        grid-column: 3/4;
+        grid-row: 1/3; }
+        .lightbox_container .lightbox .right img {
+          height: 100%;
+          width: 100%;
+          margin: auto; }
+      .lightbox_container .lightbox #images {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        z-index: 1;
+        border-bottom: 1px solid #e38f8490; }
+        .lightbox_container .lightbox #images .lb_images {
+          margin: auto;
+          height: 100%;
+          width: 100%; }
+          .lightbox_container .lightbox #images .lb_images img {
+            height: 100%;
+            width: 100%; }
+    .lightbox_container ul {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      width: 100%;
+      text-align: center;
+      margin: auto; }
+      .lightbox_container ul .g_list {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 2px;
+        background-color: rgba(0, 0, 0, 0.5); }
+        .lightbox_container ul .g_list:hover, .lightbox_container ul .g_list :active, .lightbox_container ul .g_list :focus {
+          cursor: pointer;
+          background-color: #e38f84; }
+
+  /* ----- CONTACT PAGE ----- */
+  .form_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 580px;
+    position: relative;
+    top: 80px; }
+    .form_container form {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 40px;
+      margin: 0; }
+      .form_container form .h_message {
+        text-align: left; }
+    .form_container .c_info_container {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      position: relative;
+      top: 80px;
+      top: 18px; }
+      .form_container .c_info_container .h_message {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left; }
+    .form_container .map_container {
+      height: 400px; } }
+@media only screen and (min-width: 1024px) {
+  /* ----- INDEX PAGE ----- */
+  .lore_container {
+    display: grid;
+    height: 600px;
+    position: relative;
+    top: 80px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    .lore_container .lore {
+      grid-column: 2/6;
+      grid-row: 1/6; }
+    .lore_container #sc_btn {
+      grid-column: 3/4;
+      grid-row: 3/4; }
+    .lore_container #au_btn {
+      grid-column: 4/5;
+      grid-row: 3/4; }
+
+  .whoWeAre_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 420px;
+    padding: 30px;
+    position: relative;
+    top: 80px; }
+    .whoWeAre_container .whoWeAre_text {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      padding-left: 0; }
+      .whoWeAre_container .whoWeAre_text h3 {
+        padding-left: 0; }
+      .whoWeAre_container .whoWeAre_text h5 {
+        padding-left: 0; }
+      .whoWeAre_container .whoWeAre_text p {
+        padding-left: 0; }
+    .whoWeAre_container .whoWeAre_images {
+      grid-column: 4/6;
+      grid-row: 1/2;
+      grid-gap: 10px; }
+
+  .iconSection_container {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding: 0; }
+    .iconSection_container .iconSection, .iconSection_container .iconSection_text {
+      display: grid;
+      width: 200px;
+      font-size: .9em;
+      padding: 25px 0 20px 0;
+      margin: auto;
+      margin-top: 0; }
+      .iconSection_container .iconSection h3, .iconSection_container .iconSection_text h3 {
+        font-size: 1.3em;
+        padding: 0 20px; }
+    .iconSection_container .screen {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 150px; }
+    .iconSection_container #screen_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSection_container #screen_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .screen_text {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+      .iconSection_container .screen_text p {
+        padding: 0 40px; }
+      .iconSection_container .screen_text p {
+        padding: 0 60px; }
+    .iconSection_container .speaker {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSection_container #speaker_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSection_container #speaker_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .speaker_text {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+      .iconSection_container .speaker_text p {
+        padding: 0 40px; }
+      .iconSection_container .speaker_text p {
+        padding: 0 60px; }
+    .iconSection_container .wrench {
+      grid-column: 4/5;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSection_container #wrench_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSection_container #wrench_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .wrench_text {
+      grid-column: 4/5;
+      grid-row: 2/3; }
+      .iconSection_container .wrench_text p {
+        padding: 0 40px; }
+      .iconSection_container .wrench_text p {
+        padding: 0 60px; }
+    .iconSection_container .document {
+      grid-column: 5/6;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSection_container #document_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSection_container #document_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSection_container .document_text {
+      grid-column: 5/6;
+      grid-row: 2/3; }
+      .iconSection_container .document_text p {
+        padding: 0 40px; }
+      .iconSection_container .document_text p {
+        padding: 0 60px; }
+
+  .portfolioSection_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 650px;
+    position: relative;
+    top: 80px; }
+    .portfolioSection_container .portfolioSection_text {
+      grid-column: 2/6;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 0px 50px 20px 0;
+      height: 300px; }
+      .portfolioSection_container .portfolioSection_text h3 {
+        padding: 50px 0 0 0; }
+      .portfolioSection_container .portfolioSection_text p {
+        padding-left: 0; }
+    .portfolioSection_container .portfolioSection_images {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      height: 200px;
+      grid-gap: 10px; }
+      .portfolioSection_container .portfolioSection_images #image_one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 150px; }
+      .portfolioSection_container .portfolioSection_images #image_two {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 150px; }
+      .portfolioSection_container .portfolioSection_images #image_three {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 150px; }
+      .portfolioSection_container .portfolioSection_images #image_four {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 150px; }
+    .portfolioSection_container #image_large {
+      grid-column: 4/6;
+      grid-row: 2/3;
+      height: 310px;
+      width: 100%;
+      margin-left: 10px; }
+
+  .teamSection_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 900px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 80px; }
+    .teamSection_container .teamSection_text {
+      grid-column: 2/6;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 40px 0 20px 0; }
+      .teamSection_container .teamSection_text h3 {
+        padding-left: 0; }
+      .teamSection_container .teamSection_text p {
+        padding: 10px 50px 0 0;
+        font-size: .9em;
+        line-height: 20px; }
+    .teamSection_container .photoOne {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSection_container .photoOne .team_img {
+        height: 150px;
+        width: 150px; }
+    .teamSection_container .infoOne {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSection_container .infoOne hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoOne:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoOne .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoOne .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoOne .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoTwo {
+      grid-column: 4/5;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSection_container .photoTwo .team_img {
+        height: 150px;
+        width: 150px; }
+    .teamSection_container .infoTwo {
+      grid-column: 5/6;
+      grid-row: 2/3;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSection_container .infoTwo hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoTwo:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoTwo .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoTwo .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoTwo .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoThree {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSection_container .photoThree .team_img {
+        height: 150px;
+        width: 150px; }
+    .teamSection_container .infoThree {
+      grid-column: 3/4;
+      grid-row: 3/4;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSection_container .infoThree hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoThree:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoThree .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoThree .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoThree .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSection_container .photoFour {
+      grid-column: 4/5;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSection_container .photoFour .team_img {
+        height: 150px;
+        width: 150px; }
+    .teamSection_container .infoFour {
+      grid-column: 5/6;
+      grid-row: 3/4;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSection_container .infoFour hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSection_container .infoFour:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSection_container .infoFour .teamMemberName {
+        padding: 10px; }
+      .teamSection_container .infoFour .teamMemberPosition {
+        padding: 10px; }
+      .teamSection_container .infoFour .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+
+  .counter_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    height: 200px;
+    position: relative;
+    top: 80px;
+    padding: 0; }
+    .counter_container .counter {
+      font-size: 1em; }
+    .counter_container .coffees {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .counter_container .girls {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .counter_container .projects {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .counter_container .hours {
+      grid-column: 5/6;
+      grid-row: 1/2; } }
+
+/*# sourceMappingURL=responsive.css.map */

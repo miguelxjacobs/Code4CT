@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header class="header">
@@ -21,6 +22,23 @@
             <a href="index.html">                
                 <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo" draggable="false">
             </a>
+        </div>
+
+        <!-- ********* Desktop Navbar ********* -->
+        <nav>
+            <ul>
+                <li class="desktop_li"><a href="about.html"><span>About</span></a></li>
+                <li class="desktop_li"><a href="portfolio.html">Portfolio</a></li>
+                <li class="desktop_li"><a href="courses.html">Courses</a></li>
+                <li class="desktop_li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search_container">
+            <input type="text" class="searchBox" placeholder=" Search...">
+            <button class="search">
+                <img src="images/icons/search_icon.png" alt="">
+            </button>
         </div>
 
         <!-- Hamburger icon -->
@@ -53,6 +71,9 @@
 
     <!-- Mission Statement -->
     <div class="lore_container">
+        <div class="bg_wrapper">
+
+        </div>
         <article class="lore">
             <p>
                 <h2>Code for Cape Town</h2><br>
@@ -201,11 +222,11 @@
             <div id="image_four">
                 <img class="size" src="images/portfolioSection/img4.jpg" alt="">
             </div>
-
-            <div id="image_large">
-                <img class="size" src="images/portfolioSection/imgL.jpg" alt="">
-            </div>
         </section>
+
+        <div id="image_large">
+            <img class="size" src="images/portfolioSection/imgL.jpg" alt="">
+        </div>
     </div>
 
      <!-- "Meet Our Team" Section Below -->
@@ -322,6 +343,11 @@
             <input type="email" name="mailto" id="mail" placeholder="enter your email" required><br><br>
             <button type="submit">submit</button>
         </form>
+    </div>
+
+    <!-- backToTop container -->
+    <div id="backToTop" onclick="scrollUp()">
+        <img id="toTop" src="images/icons/toTop.png" alt="">
     </div>
 
     <!-- All Footers Below -->

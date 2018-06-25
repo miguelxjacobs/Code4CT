@@ -2,14 +2,11 @@
 
 /* Declarations */
 //count defined as integer and assigned zero to start from
-let countC = -10; //count for coffees
-let countG = -10; //count for girls
-let countP = -10; //count for projects
-let countH = -10; //count for hours
+//count for coffees, girls, projects & hours
+let countC = 0, countG = 0, countP = 0, countH = 0;
 
 //sets interval to how often timer will update in milliseconds
 const counterCoffee = setInterval(timerCoffee, 1);
-
 const counterGirls = setInterval(timerGirls, 1);
 const counterProj = setInterval(timerProj, 1);
 const counterHours = setInterval(timerHours, 1);

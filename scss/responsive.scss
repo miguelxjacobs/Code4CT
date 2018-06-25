@@ -1,0 +1,867 @@
+/* Responsive stylesheet code4ct by Miguel Jacobs*/
+
+//Fix for grid structure due to "position: fixed;" in header tag
+@mixin positionFix {
+    position: relative;
+    top: 80px;
+}
+
+//button style
+@mixin buttonStyle {    
+    width: 150px;
+    height: 50px;
+    font-size: 1.45em;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+@mixin directionBtn {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0,0,0,0.3);
+    border: 0.5px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #e38f8450;
+    z-index: 5;
+    padding: 5px;
+}
+
+//mixin adding style and animation
+@mixin enlarge {        
+    animation: animate .5s linear 1;
+    @keyframes animate {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }                        
+    }
+}
+
+//icons and text
+@mixin iconsAndText {
+    padding-top: 25px;
+    height: 50px;
+    width: 165px;
+    .icon {
+        height: 100%;
+        width: 40%;
+    }
+}
+
+//padding
+@mixin padding {        
+    p {
+        padding: 0 40px;
+    }
+}
+
+//team positioning
+@mixin teamPositioning {
+    hr {
+        margin: 10px 0 10px 10px;
+        width: 50%;
+    }
+    &:hover {        
+        hr {
+            margin: 10px 0 10px 10px;
+            width: 70%;        
+        }
+    }
+    .teamMemberName {
+        padding: 10px;
+    }
+    .teamMemberPosition {
+        padding: 10px;
+    }
+    .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em;
+    }
+}
+//image Sizing
+@mixin imageSizing {        
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    margin-top: 60px;
+}
+
+
+// ---------------Tab View Responsiveness
+@media only screen and (min-width: 768px) {
+
+    /* ----- INDEX PAGE ----- */
+
+//Introduction container
+.lore_container {
+    display: grid;
+    height: 350px;
+    @include positionFix;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+    //Introduction box
+    .lore {
+        grid-column: 2/5;
+        grid-row: 1/6;
+    }
+    #sc_btn {
+        grid-column: 2/5;
+        grid-row: 4/5;
+    }
+    //"About Us" button
+    #au_btn {        
+        grid-column: 2/5;
+        grid-row: 5/6;
+    }
+}
+
+//whoAreWe - Section
+.whoWeAre_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 400px;
+    @include positionFix;
+    .whoWeAre_text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 350px;
+        text-align: left;
+        #rm_btn {
+            margin: auto;            
+        }
+    }
+    .whoWeAre_images {        
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+//iconSection container
+.iconSection_container {
+    display: grid;
+    height: 720px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 0;
+    //iconSection
+    .iconSection, .iconSection_text {
+        display: grid;
+        width: 200px;
+        font-size: .8em;
+        padding: 10px 20px 40px 20px;
+        margin: auto;
+    }
+    //screen only
+    .screen {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 50%;
+    }
+    #screen_div {
+        @include iconsAndText;
+    }
+    .screen_text {
+        @include padding;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    //speaker only
+    .speaker {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 50%;
+    }
+    #speaker_div {
+        @include iconsAndText;
+    }
+    .speaker_text {
+        @include padding;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    //wrench only
+    .wrench {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 50%;
+    }
+    #wrench_div {
+        @include iconsAndText;
+    }
+    .wrench_text {
+        @include padding;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    //document only
+    .document {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 50%;
+    }
+    #document_div {
+        @include iconsAndText;
+    }
+    .document_text {
+        @include padding;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
+
+//portfolioSection container
+.portfolioSection_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 700px;
+    @include positionFix;
+    .portfolioSection_text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+        padding: 0px 20px 20px 20px;
+        height: 300px;
+        h3 {
+            padding: 50px 0 50px 30px;
+        }
+    }
+    //images alignment
+    .portfolioSection_images {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        #image_one {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: 200px;
+        }
+        #image_two {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            height: 200px;
+        }
+        #image_three {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 200px;
+        }
+        #image_four {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            height: 200px;
+        }
+    }
+    #image_large {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        height: 300px;
+    }
+}
+
+//meet our team - section
+.teamSection_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1450px;
+    padding-bottom: 30px;
+    @include positionFix;
+    .teamSection_text {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        text-align: left;
+        padding: 40px 20px 20px 20px;
+        h3 {
+            padding-left: 150px;
+        }
+        p {
+            padding: 10px 150px 0 150px;
+            font-size: .9em;
+            line-height: 20px;
+        }
+    }
+    //team member one
+    .photoOne {        
+        grid-column: 1/2;
+        grid-row: 2/3;
+        @include imageSizing;
+    }
+    .infoOne {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+    //team member two
+    .photoTwo {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        @include imageSizing;
+    }
+    .infoTwo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+    //team member three
+    .photoThree {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        @include imageSizing;
+    }
+    .infoThree {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;        
+    }
+    //team member four
+    .photoFour {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        @include imageSizing;
+    }
+    .infoFour {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+}
+
+//counter section
+.counter_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 150px;
+    @include positionFix;
+    padding: 0;
+    .coffees {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .girls {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .projects {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .hours {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+}
+
+    /* ----- ABOUT PAGE ----- */
+    .aboutUs_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 900px;
+        @include positionFix;
+        text-align: justify;
+        .aboutUs {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 40px 20px 0 60px;
+            h3 {
+                padding-bottom: 30px;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        //Attraction Image 
+        .about_image {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            height: 100%;
+            width: 100%;
+        }
+        //Who We Are - Section
+        .about {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            height: 500px;
+            //heading styling only
+            .heading {
+                padding: 20px 0 40px 20px;
+            }
+            p {
+                font-size: .7em;
+            }
+        }
+        .video {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    /* ----- COURSES PAGE ----- */
+
+
+    /* ----- PORTFOLIO PAGE ----- */
+    .lightbox_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 50px;
+        @include positionFix;
+        border-bottom: 0.5px solid #e38f84;
+        .lightbox {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 70px 1fr 70px;
+            grid-template-rows: repeat(2, 1fr);
+            .direction {
+                @include directionBtn;
+                background-color: #e38f8470;
+                margin: auto;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(0,0,0, 0.2);
+                }
+            }
+            .left {
+                grid-column: 1/2;
+                grid-row: 1/3;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            .right {
+                grid-column: 3/4;
+                grid-row: 1/3;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            #images {
+                grid-column: 1/4;
+                grid-row: 1/3;
+                z-index: 1;
+                border-bottom: 1px solid #e38f8490;
+                .lb_images {
+                    margin: auto;
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        ul {
+            grid-column: 1/4;
+            grid-row: 2/3;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            .g_list {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 25px;
+                padding: 5px;
+                margin: 2px;
+                background-color: rgba(0,0,0, 0.5);
+                &:hover, :active, :focus {
+                    cursor: pointer;
+                    background-color: #e38f84;
+                    
+                }
+            }
+        }
+    }
+
+    /* ----- CONTACT PAGE ----- */
+    .form_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        height: 580px;
+        @include positionFix;
+        form {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 40px;
+            margin: 0;
+            .h_message {
+                text-align: left;
+            }
+        }
+        //Contact Info
+        .c_info_container {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @include positionFix;
+            top: 18px;
+            .h_message {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: left;
+            }
+        }
+        //Location of Code4CT
+        .map_container {
+            height: 400px;
+        }
+    }
+}
+
+
+// ---------------Desktop View Responsiveness
+@media only screen and (min-width: 1024px) {
+
+        /* ----- INDEX PAGE ----- */
+
+    //Introduction container
+    .lore_container {
+        display: grid;
+        height: 600px;
+        @include positionFix;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        //Introduction box
+        .lore {
+            grid-column: 2/6;
+            grid-row: 1/6;
+        }
+        #sc_btn {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        //"About Us" button
+        #au_btn {        
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+    }
+
+    //whoAreWe - Section
+    .whoWeAre_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        height: 420px;
+        padding: 30px;
+        @include positionFix;
+        .whoWeAre_text {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            padding-left: 0;
+            h3 {
+                padding-left: 0;
+            }
+            h5 {
+                padding-left: 0;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        .whoWeAre_images {        
+            grid-column: 4/6;
+            grid-row: 1/2;
+            grid-gap: 10px;
+        }
+    }
+
+    //iconSection container
+    .iconSection_container {
+        display: grid;
+        height: 500px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        padding: 0;
+        //iconSection
+        .iconSection, .iconSection_text {
+            display: grid;
+            width: 200px;
+            font-size: .9em;
+            padding: 25px 0 20px 0;
+            margin: auto;
+            margin-top: 0;
+            h3 {                
+                font-size: 1.3em;
+                padding: 0 20px;
+            }
+        }
+        //screen only
+        .screen {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 150px;
+        }
+        #screen_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .screen_text {
+            @include padding;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            p {
+                padding: 0 60px;
+            }
+        }
+        //speaker only
+        .speaker {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #speaker_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .speaker_text {
+            @include padding;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            p {
+                padding: 0 60px;
+            }
+        }
+        //wrench only
+        .wrench {
+            grid-column: 4/5;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #wrench_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .wrench_text {
+            @include padding;
+            grid-column: 4/5;
+            grid-row: 2/3;
+            p {
+                padding: 0 60px;
+            }
+        }
+        //document only
+        .document {
+            grid-column: 5/6;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #document_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .document_text {
+            @include padding;
+            grid-column: 5/6;
+            grid-row: 2/3;
+            p {
+                padding: 0 60px;
+            }
+        }
+    }
+
+    //portfolioSection container
+    .portfolioSection_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 650px;
+        @include positionFix;
+        .portfolioSection_text {
+            grid-column: 2/6;
+            grid-row: 1/2;
+            text-align: left;
+            padding: 0px 50px 20px 0;
+            height: 300px;
+            h3 {
+                padding: 50px 0 0 0;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        //images alignment
+        .portfolioSection_images {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            height: 200px;
+            grid-gap: 10px;
+            #image_one {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                height: 150px;
+            }
+            #image_two {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                height: 150px;
+            }
+            #image_three {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                height: 150px;
+            }
+            #image_four {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                height: 150px;
+            }
+        }
+        #image_large {
+            grid-column: 4/6;
+            grid-row: 2/3;
+            height: 310px;
+            width: 100%;
+            margin-left: 10px
+        }
+    }
+
+    //meet our team - section
+    .teamSection_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 900px;
+        padding-bottom: 30px;
+        @include positionFix;
+        .teamSection_text {
+            grid-column: 2/6;
+            grid-row: 1/2;
+            text-align: left;
+            padding: 40px 0 20px 0;
+            h3 {
+                padding-left: 0;
+            }
+            p {
+                padding: 10px 50px 0 0;
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+        //team member one
+        .photoOne {        
+            grid-column: 2/3;
+            grid-row: 2/3;
+            @include imageSizing;
+            .team_img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoOne {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+        //team member two
+        .photoTwo {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            @include imageSizing;
+            .team_img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoTwo {
+            grid-column: 5/6;
+            grid-row: 2/3;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+        //team member three
+        .photoThree {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            @include imageSizing;
+            .team_img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoThree {
+            grid-column: 3/4;
+            grid-row: 3/4;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;        
+        }
+        //team member four
+        .photoFour {
+            grid-column: 4/5;
+            grid-row: 3/4;
+            @include imageSizing;
+            .team_img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoFour {
+            grid-column: 5/6;
+            grid-row: 3/4;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+    }
+
+    //counter section
+    .counter_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        height: 200px;
+        @include positionFix;
+        padding: 0;
+        .counter {
+            font-size: 1em;
+        }
+        .coffees {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .girls {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .projects {
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .hours {
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+    }
+}

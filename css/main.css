@@ -19,11 +19,26 @@
   top: 80px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-color: #2a2a2a;
-  background-image: url(../images/homepage_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 40px 0 40px 0; }
+  padding: 40px 0 40px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+  .lore_container .bg_wrapper {
+    grid-column: 1/6;
+    grid-row: 1/4;
+    width: 9999px;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/homepage_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: bg 5s linear infinite; }
+@keyframes bg {
+  0% {
+    transform: translateX(0);
+    background-image: url(../images/homepage_bg.jpg); }
+  100% {
+    transform: translateX(1000px);
+    background-image: url(../images/homepage_bg.jpg); } }
   .lore_container h2 {
     letter-spacing: 2px;
     font-size: 1.4em;
@@ -37,7 +52,7 @@
     text-align: center;
     color: white;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .lore_container .btn {
     width: 150px;
     height: 50px;
@@ -162,19 +177,24 @@
   padding: 10px 10px 50px 10px; }
   .iconSection_container .iconSection, .iconSection_container .iconSection_text {
     display: grid;
-    width: 100%;
+    width: 250px;
     text-align: center;
     color: white;
     font-size: .9em;
-    padding: 10px 0 10px 0;
+    padding: 10px 20px 10px 20px;
     line-height: 2em;
-    font-size: .8em; }
+    font-size: .8em;
+    margin: auto; }
     .iconSection_container .iconSection h3, .iconSection_container .iconSection_text h3 {
       height: 75px;
       font-size: 2em;
       font-weight: 100;
       letter-spacing: 2px;
       margin: 0; }
+  .iconSection_container .screen {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 250px; }
   .iconSection_container #screen_div {
     padding-top: 25px;
     height: 100px;
@@ -184,9 +204,16 @@
       height: 100%;
       width: 40%; }
   .iconSection_container .screen_text {
+    grid-column: 1/2;
     grid-row: 2/3; }
     .iconSection_container .screen_text p {
-      padding: 0 40px; }
+      padding: 0 40px;
+      font-size: .7em;
+      line-height: 1.7em; }
+  .iconSection_container .speaker {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 250px; }
   .iconSection_container #speaker_div {
     padding-top: 25px;
     height: 100px;
@@ -196,9 +223,16 @@
       height: 100%;
       width: 40%; }
   .iconSection_container .speaker_text {
+    grid-column: 1/2;
     grid-row: 4/5; }
     .iconSection_container .speaker_text p {
-      padding: 0 40px; }
+      padding: 0 40px;
+      font-size: .7em;
+      line-height: 1.7em; }
+  .iconSection_container .wrench {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 250px; }
   .iconSection_container #wrench_div {
     padding-top: 25px;
     height: 100px;
@@ -208,9 +242,16 @@
       height: 100%;
       width: 40%; }
   .iconSection_container .wrench_text {
+    grid-column: 1/2;
     grid-row: 6/7; }
     .iconSection_container .wrench_text p {
-      padding: 0 40px; }
+      padding: 0 40px;
+      font-size: .7em;
+      line-height: 1.7em; }
+  .iconSection_container .document {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    width: 250px; }
   .iconSection_container #document_div {
     padding-top: 25px;
     height: 100px;
@@ -220,15 +261,18 @@
       height: 100%;
       width: 40%; }
   .iconSection_container .document_text {
+    grid-column: 1/2;
     grid-row: 8/9; }
     .iconSection_container .document_text p {
-      padding: 0 40px; }
+      padding: 0 40px;
+      font-size: .7em;
+      line-height: 1.7em; }
 
 .portfolioSection_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 1000px;
+  height: 750px;
   position: relative;
   top: 80px; }
   .portfolioSection_container .portfolioSection_text {
@@ -254,38 +298,38 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 700px; }
+    height: 100%; }
     .portfolioSection_container .portfolioSection_images #image_one {
       grid-column: 1/2;
       grid-row: 1/2;
-      height: 200px;
+      height: 150px;
       overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_two {
       grid-column: 2/3;
       grid-row: 1/2;
-      height: 200px;
+      height: 150px;
       overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_three {
       grid-column: 1/2;
       grid-row: 2/3;
-      height: 200px;
+      height: 150px;
       overflow: hidden; }
     .portfolioSection_container .portfolioSection_images #image_four {
       grid-column: 2/3;
       grid-row: 2/3;
-      height: 200px;
+      height: 150px;
       overflow: hidden; }
-    .portfolioSection_container .portfolioSection_images #image_large {
-      grid-column: 1/3;
-      grid-row: 3/4;
-      height: 300px;
-      overflow: hidden; }
+  .portfolioSection_container #image_large {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 150px;
+    overflow: hidden; }
 
 .teamSection_container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
-  height: 2600px;
+  height: 2750px;
   position: relative;
   top: 80px; }
   .teamSection_container .teamSection_text {
@@ -428,12 +472,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  height: 400px;
   position: relative;
   top: 80px;
   background-color: black;
   padding: 50px 0 20px 0; }
   .counter_container .counter {
+    height: 400px;
     margin: auto;
     width: 120px;
     height: 70px;
@@ -450,18 +494,18 @@
       padding-top: 10px;
       text-align: left;
       font-size: .8em; }
-    .counter_container .counter .coffees {
-      grid-column: 1/2;
-      grid-row: 1/2; }
-    .counter_container .counter .girls {
-      grid-column: 1/2;
-      grid-row: 2/3; }
-    .counter_container .counter .projects {
-      grid-column: 1/2;
-      grid-row: 3/4; }
-    .counter_container .counter .hours {
-      grid-column: 1/2;
-      grid-row: 4/5; }
+  .counter_container .coffees {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .counter_container .girls {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .counter_container .projects {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .counter_container .hours {
+    grid-column: 1/2;
+    grid-row: 4/5; }
 
 .subscribe_container {
   position: relative;
@@ -502,17 +546,22 @@
 #backToTop {
   height: 40px;
   width: 40px;
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.5px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #e38f8450;
+  z-index: 5;
+  padding: 5px;
+  display: none;
   bottom: 80px;
   right: 10px;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px; }
+  position: fixed; }
+  #backToTop:hover {
+    cursor: pointer;
+    background-color: #e38f8450; }
   #backToTop #toTop {
     width: 100%;
     height: 100%; }
-    #backToTop #toTop:hover {
-      cursor: pointer; }
 
 /* ABOUT US PAGE STYLING */
 .aboutUs_container {
@@ -522,7 +571,8 @@
   height: 1540px;
   position: relative;
   top: 80px;
-  text-align: center; }
+  text-align: center;
+  grid-column: 1/3; }
   .aboutUs_container .aboutUs {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -628,23 +678,86 @@
 .lightbox_container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  height: 500px;
+  grid-template-rows: 300px 50px;
   position: relative;
   top: 80px;
-  background-color: gray; }
+  border-bottom: 0.5px solid #e38f84; }
+  .lightbox_container .lightbox {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    grid-template-rows: repeat(2, 1fr); }
+    .lightbox_container .lightbox .direction {
+      height: 40px;
+      width: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 0.5px solid black;
+      border-radius: 25px;
+      box-shadow: 0 0 10px #e38f8450;
+      z-index: 5;
+      padding: 5px;
+      background-color: #e38f8470;
+      margin: auto; }
+      .lightbox_container .lightbox .direction:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.2); }
+    .lightbox_container .lightbox .left {
+      grid-column: 1/2;
+      grid-row: 1/3; }
+      .lightbox_container .lightbox .left img {
+        height: 100%;
+        width: 100%;
+        margin: auto; }
+    .lightbox_container .lightbox .right {
+      grid-column: 3/4;
+      grid-row: 1/3; }
+      .lightbox_container .lightbox .right img {
+        height: 100%;
+        width: 100%;
+        margin: auto; }
+    .lightbox_container .lightbox #images {
+      grid-column: 1/4;
+      grid-row: 1/3;
+      z-index: 1;
+      border-bottom: 1px solid #e38f8490; }
+      .lightbox_container .lightbox #images .lb_images {
+        margin: auto;
+        height: 100%;
+        width: 100%; }
+        .lightbox_container .lightbox #images .lb_images img {
+          height: 100%;
+          width: 100%; }
+  .lightbox_container ul {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+    .lightbox_container ul .g_list {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 25px;
+      padding: 5px;
+      margin: 2px;
+      background-color: rgba(0, 0, 0, 0.5); }
+      .lightbox_container ul .g_list:hover, .lightbox_container ul .g_list :active, .lightbox_container ul .g_list :focus {
+        cursor: pointer;
+        background-color: #e38f84; }
 
 /* CONTACT PAGE STYLING */
 .form_container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  height: 590px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 1110px;
   width: 100%;
   position: relative;
   top: 80px; }
   .form_container form {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 1/2;
     padding: 40px;
     text-align: center;
@@ -677,63 +790,64 @@
       background-color: #e38f84; }
     .form_container form .email_btn {
       color: white; }
-
-.c_info_container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  height: 450px;
-  width: 100%;
-  position: relative;
-  top: 80px; }
-  .c_info_container .h_message {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding: 20px 20px 0 20px;
-    color: gray;
-    text-align: center; }
-    .c_info_container .h_message .first {
-      border-bottom: 3px solid #e38f84;
-      padding-bottom: 15px; }
-    .c_info_container .h_message .restOf {
-      border-bottom: 3px solid #dadada;
-      padding-bottom: 15px; }
-  .c_info_container p {
-    grid-column: 1/2;
+  .form_container .c_info_container {
+    grid-column: 1/3;
     grid-row: 2/3;
-    padding: 0 30px 0 30px;
-    color: #515151;
-    font-size: .8em;
-    line-height: 1.8em; }
-  .c_info_container .contact_details {
-    padding: 30px; }
-    .c_info_container .contact_details .holder .icon {
-      width: 30px;
-      height: 30px;
-      color: #ee534f;
-      margin: auto;
-      float: left; }
-      .c_info_container .contact_details .holder .icon #phone {
-        width: 100%;
-        height: 100%;
-        padding: 15px; }
-      .c_info_container .contact_details .holder .icon #email {
-        width: 100%;
-        height: 100%;
-        padding: 15px; }
-      .c_info_container .contact_details .holder .icon #time {
-        width: 100%;
-        height: 100%;
-        padding: 15px; }
-      .c_info_container .contact_details .holder .icon #location {
-        width: 100%;
-        height: 100%;
-        padding: 15px; }
-    .c_info_container .contact_details .holder .details {
-      padding: 20px 0 20px 60px; }
-    .c_info_container .contact_details .holder .d_loc {
-      padding: 8px 20px 0 60px;
-      line-height: 1.3em; }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 450px;
+    width: 100%;
+    position: relative;
+    top: 80px; }
+    .form_container .c_info_container .h_message {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 20px 20px 0 20px;
+      color: gray;
+      text-align: center; }
+      .form_container .c_info_container .h_message .first {
+        border-bottom: 3px solid #e38f84;
+        padding-bottom: 15px; }
+      .form_container .c_info_container .h_message .restOf {
+        border-bottom: 3px solid #dadada;
+        padding-bottom: 15px; }
+    .form_container .c_info_container p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0 30px 0 30px;
+      color: #515151;
+      font-size: .8em;
+      line-height: 1.8em; }
+    .form_container .c_info_container .contact_details {
+      padding: 30px; }
+      .form_container .c_info_container .contact_details .holder .icon {
+        width: 30px;
+        height: 30px;
+        color: #ee534f;
+        margin: auto;
+        float: left; }
+        .form_container .c_info_container .contact_details .holder .icon #phone {
+          width: 100%;
+          height: 100%;
+          padding: 15px; }
+        .form_container .c_info_container .contact_details .holder .icon #email {
+          width: 100%;
+          height: 100%;
+          padding: 15px; }
+        .form_container .c_info_container .contact_details .holder .icon #time {
+          width: 100%;
+          height: 100%;
+          padding: 15px; }
+        .form_container .c_info_container .contact_details .holder .icon #location {
+          width: 100%;
+          height: 100%;
+          padding: 15px; }
+      .form_container .c_info_container .contact_details .holder .details {
+        padding: 20px 0 20px 60px; }
+      .form_container .c_info_container .contact_details .holder .d_loc {
+        padding: 8px 20px 0 60px;
+        line-height: 1.3em; }
 
 .map_container {
   display: grid;

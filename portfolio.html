@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header class="header">
@@ -57,24 +58,41 @@
         <div class="lightbox">
 
             <!-- Scroll To Left Arrow -->
-            <div id="left"></div>
+            <div class="direction left">
+                <img src="images/icons/toLeft.png" alt="">
+            </div>
 
             <!-- Gallery -->
             <div id="images">
+                <div class="lb_images">
+                    <img src="images/homepage_bg.jpg" alt="">
+                </div>
+                <div class="lb_image">
 
+                </div>
+                <div class="lb_image">
+
+                </div>
             </div>
 
             <!-- Scroll To Right Arrow -->
-            <div id="right"></div>
+            <div class="direction right">
+                <img src="images/icons/toRight.png" alt="">
+            </div>
         </div>
 
         <!-- Gallery List -->
         <ul>
-            <li class="g_list">1</li>
-            <li class="g_list">2</li>
-            <li class="g_list">3</li>
-            <li class="g_list">4</li>
+            <li class="g_list"></li>
+            <li class="g_list"></li>
+            <li class="g_list"></li>
+            <li class="g_list"></li>
         </ul>
+    </div>
+
+    <!-- backToTop container -->
+    <div id="backToTop" onclick="scrollUp()">
+        <img id="toTop" src="images/icons/toTop.png" alt="">
     </div>
 
     <!-- All Footers Below -->
