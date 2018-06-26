@@ -56,7 +56,10 @@ const canvas_two = document.getElementsByClassName('canvas')[1].getContext('2d')
 const canvas_three = document.getElementsByClassName('canvas')[2].getContext('2d');
 const canvas_four = document.getElementsByClassName('canvas')[3].getContext('2d');
 
-let i = 0;
+let count_one = 0;
+let count_two = 0;
+let count_three = 0;
+let count_four = 0;
 
 let start = 4.72;
 
@@ -83,9 +86,9 @@ function progressSimulation() {
 
     canvas.textAlign = 'center';
 
-    diff = ((i / 100) * (Math.PI * 2 * 10)).toFixed(2);
+    diff = ((count_one / 100) * (Math.PI * 2 * 10)).toFixed(2);
 
-    canvas.fillText(i + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
+    canvas.fillText(count_one + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
 
     canvas.beginPath();
 
@@ -94,13 +97,13 @@ function progressSimulation() {
     canvas.stroke();
 
     //Condition to which percentage will be drawn
-    if(i > 69) {
+    if(count_one > 79) {
         clearTimeout(simulation);
 
         //Script here upon progress complete
     }
     //Iteration allowing canvas to count through
-    i++;
+    count_one++;
 }
 
 //stats two
@@ -111,15 +114,15 @@ function prog_sim_two() {
     canvas_two.fillStyle = '#ee534f';
     canvas_two.strokeStyle = '#ee534f';
     canvas_two.textAlign = 'center';
-    diff = ((i / 100) * (Math.PI * 2 * 10)).toFixed(2);
-    canvas_two.fillText(i + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
+    diff = ((count_two / 100) * (Math.PI * 2 * 10)).toFixed(2);
+    canvas_two.fillText(count_two + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
     canvas_two.beginPath();
     canvas_two.arc(35, 35, 30, start, ((diff / 10) + start), false);
     canvas_two.stroke();
-    if(i > 56) {
+    if(count_two > 73) {
         clearTimeout(simulation_two);
     }
-    i++;
+    count_two++;
 }
 
 //stats three
@@ -130,15 +133,15 @@ function prog_sim_three() {
     canvas_three.fillStyle = '#ee534f';
     canvas_three.strokeStyle = '#ee534f';
     canvas_three.textAlign = 'center';
-    diff = ((i / 100) * (Math.PI * 2 * 10)).toFixed(2);
-    canvas_three.fillText(i + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
+    diff = ((count_three / 100) * (Math.PI * 2 * 10)).toFixed(2);
+    canvas_three.fillText(count_three + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
     canvas_three.beginPath();
     canvas_three.arc(35, 35, 30, start, ((diff / 10) + start), false);
     canvas_three.stroke();
-    if(i > 87) {
+    if(count_three > 55) {
         clearTimeout(simulation_three);
     }
-    i++;
+    count_three++;
 }
 
 //stats four
@@ -149,13 +152,13 @@ function prog_sim_four() {
     canvas_four.fillStyle = '#ee534f';
     canvas_four.strokeStyle = '#ee534f';
     canvas_four.textAlign = 'center';
-    diff = ((i / 100) * (Math.PI * 2 * 10)).toFixed(2);
-    canvas_four.fillText(i + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
+    diff = ((count_four / 100) * (Math.PI * 2 * 10)).toFixed(2);
+    canvas_four.fillText(count_four + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
     canvas_four.beginPath();
     canvas_four.arc(35, 35, 30, start, ((diff / 10) + start), false);
     canvas_four.stroke();
-    if(i > 63) {
+    if(count_four > 23) {
         clearTimeout(simulation_four);
     }
-    i++;
+    count_four++;
 }

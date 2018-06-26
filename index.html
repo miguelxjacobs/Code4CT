@@ -74,18 +74,22 @@
     <div class="lore_container">
         <div class="bg_wrapper">
 
-        <!-- Background Image Slider -->
-        <div id="slider">
-            <div class="bg_image">
-                <img src="images/homepage_bg.jpg" alt="" class="slide_img">
+            <!-- Background Image Slider -->
+            <div id="slider">
+                <div class="bg_image">
+                    <img src="images/homepage_bg.jpg" alt="" class="slide_img" width="100%">
+                </div>
+                <div class="bg_image">
+                    <img src="images/code4ct_homeslider2.jpg" alt="" class="slide_img" width="100%">
+                </div>
+                <div class="bg_image">
+                    <img src="images/code4ct_homeslider3.jpg" alt="" class="slide_img" width="100%">
+                </div>
             </div>
-            <div class="bg_image">
-                <img src="images/code4ct_homeslider2.jpg" alt="" class="slide_img">
-            </div>
-            <div class="bg_image">
-                <img src="images/code4ct_homeslider3.jpg" alt="" class="slide_img">
-            </div>
-        </div>
+
+            <button class="display_left" id="prev" onclick="showDivs(-1)">&#10094;</button>
+
+            <button class="display_right" id="next" onclick="showDivs(+1)">&#10095;</button>
 
         </div>
         <article class="lore">
@@ -164,7 +168,7 @@
         <section class="iconSection_text screen_text">
             <h3 id="coding_h3">Coding</h3>
             <p>
-                Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.
+                Learn how to build your own websites using HTML, CSS, JavaScript &amp; JQuery. Go on to explore exciting modules from game development to user experience design.
             </p>
         </section>
 
@@ -411,7 +415,7 @@
 
             <!-- Help & Support -->
             <div class="support">
-                <h5>Help & Support</h5>
+                <h5>Help &amp; Support</h5>
                 <ul>
                     <li><a href="contact.html">Help centre</a></li>
                     <li><a href="contact.html">Free simple template</a></li>
@@ -439,5 +443,6 @@
     <!-- js -->
     <script type="text/javascript" src="js/buttons.js"></script>
     <script type="text/javascript" src="js/countUp.js"></script>
+    <script type="text/javascript" src="js/background.js"></script>
 </body>
 </html>
