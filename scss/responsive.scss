@@ -148,7 +148,7 @@
 //iconSection container
 .iconSection_container {
     display: grid;
-    height: 720px;
+    height: 800px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
@@ -419,6 +419,45 @@
         }
     }
 
+    //stats counter section
+    .stats_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        @include positionFix;
+        background-color: black;
+        padding: 50px 0 20px 0;
+        .counter {
+            height: 400px;
+            margin: auto;
+            width: 120px;
+            height: 120px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            .p_style {
+                padding-top: 10px;
+                font-size: .8em;
+            }
+        }
+        .stats_one {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .stats_two {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .stats_three{
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .stats_four {
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+    }
+
     /* ----- COURSES PAGE ----- */
 
 
@@ -596,7 +635,7 @@
     //iconSection container
     .iconSection_container {
         display: grid;
-        height: 500px;
+        height: 400px;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
@@ -613,6 +652,10 @@
                 font-size: 1.3em;
                 padding: 0 20px;
             }
+            p {        
+                font-size: .7em;
+                padding: 0 20px
+            }
         }
         //screen only
         .screen {
@@ -628,9 +671,6 @@
             @include padding;
             grid-column: 2/3;
             grid-row: 2/3;
-            p {
-                padding: 0 60px;
-            }
         }
         //speaker only
         .speaker {
@@ -646,9 +686,6 @@
             @include padding;
             grid-column: 3/4;
             grid-row: 2/3;
-            p {
-                padding: 0 60px;
-            }
         }
         //wrench only
         .wrench {
@@ -664,9 +701,6 @@
             @include padding;
             grid-column: 4/5;
             grid-row: 2/3;
-            p {
-                padding: 0 60px;
-            }
         }
         //document only
         .document {
@@ -682,9 +716,6 @@
             @include padding;
             grid-column: 5/6;
             grid-row: 2/3;
-            p {
-                padding: 0 60px;
-            }
         }
     }
 

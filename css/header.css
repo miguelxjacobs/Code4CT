@@ -32,14 +32,14 @@
   .header .icon:hover {
     cursor: pointer; }
 
-nav {
+#desktop_nav {
   display: none; }
 
 .search_container {
   display: none; }
 
 #nav_wrapper {
-  display: none;
+  display: block;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: auto;
   position: fixed;
@@ -47,7 +47,7 @@ nav {
   z-index: 4;
   width: 100%;
   height: 100%;
-  margin-top: -710px; }
+  margin-top: -1210px; }
   #nav_wrapper nav {
     grid-column: 2/9;
     height: 390px;
@@ -100,22 +100,22 @@ nav {
   .header .icon {
     display: none; }
 
-  nav {
+  #desktop_nav {
     display: block;
     grid-column: 3/6;
     grid-row: 1/2;
     margin: auto; }
-    nav ul .desktop_li {
+    #desktop_nav ul .desktop_li {
       display: inline-block;
       padding: 10px; }
-      nav ul .desktop_li span {
+      #desktop_nav ul .desktop_li span {
         color: #e38f84; }
-        nav ul .desktop_li span:hover {
+        #desktop_nav ul .desktop_li span:hover {
           color: gray; }
-      nav ul .desktop_li a {
+      #desktop_nav ul .desktop_li a {
         text-decoration: none;
         color: gray; }
-        nav ul .desktop_li a:hover {
+        #desktop_nav ul .desktop_li a:hover {
           color: #e38f84; }
 
   .search_container {

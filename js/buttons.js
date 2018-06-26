@@ -50,6 +50,32 @@ function scrollUp() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     //animation smooth slide effect
-    document.body.style.animation = "animateToTop 50s linear 1";
-    document.documentElement.style.animation = "animateToTop 50s linear 1";
+    window.scrollBy ({
+        top: 1,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
+// -------- Display Hidden Window Button ----------
+
+var hiddenWindow = document.getElementById('hiddenWindow');
+var showHidden = document.getElementsByClassName('showHidden')[0];
+var closeButton = document.getElementsByClassName('closeButton')[0]; 
+
+//Clicking the "showHidden" button displays the Hidden Window
+showHidden.onclick = function() {
+    hiddenWindow.style.display = "block";
+}
+
+//Clicking the (x) button closes the Hidden Window
+closeButton.onclick = function() {
+    hiddenWindow.style.display = "none";
+}
+
+//Allows user to click outside of the hidden window to close Hidden Window
+window.onclick = function(event) {
+    if (event.target == hiddenWindow) {
+        hiddenWindow.style.display = "none";
+    }
 }

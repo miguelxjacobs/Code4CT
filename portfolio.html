@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <script src="js/lightBox.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,6 +25,24 @@
                 <img id="logo" src="images/icons/code4ct-logo.jpg" alt="logo" draggable="false">
             </a>
         </div>
+
+        <!-- ********* Desktop Navbar ********* -->
+        <nav id="desktop_nav">
+            <ul>
+                <li class="desktop_li"><a href="about.html"><span>About</span></a></li>
+                <li class="desktop_li"><a href="portfolio.html">Portfolio</a></li>
+                <li class="desktop_li"><a href="courses.html">Courses</a></li>
+                <li class="desktop_li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search_container">
+            <input type="text" class="searchBox" placeholder=" Search...">
+            <button class="search">
+                <img src="images/icons/search_icon.png" alt="">
+            </button>
+        </div>
+        <!-- ********* Desktop Navbar End ********* -->
 
         <!-- Hamburger icon -->
         <div class="icon">
@@ -53,42 +73,147 @@
     </div>
 
     <!-- Lightbox container for gallery images -->
-    <div class="lightbox_container">
+    <!-- <div class="lightbox_container"> -->
         <!-- Lightbox -->
-        <div class="lightbox">
+        <!-- <div class="lightbox"> -->
 
             <!-- Scroll To Left Arrow -->
-            <div class="direction left">
+            <!-- <div class="direction left">
                 <img src="images/icons/toLeft.png" alt="">
-            </div>
+            </div> -->
+
 
             <!-- Gallery -->
-            <div id="images">
-                <div class="lb_images">
+            <!-- <div id="images">
+                <div class="lb_images lb">
                     <img src="images/homepage_bg.jpg" alt="">
                 </div>
-                <div class="lb_image">
-
+                <div class="lb_image lb">
+                    <img id="img2" src="images/code4ct_homeslider2.jpg" alt="">
                 </div>
-                <div class="lb_image">
-
+                <div class="lb_image lb">
+                    <img id="img3" src="images/code4ct_homeslider3.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
             <!-- Scroll To Right Arrow -->
-            <div class="direction right">
+            <!-- <div class="direction right">
                 <img src="images/icons/toRight.png" alt="">
+            </div>
+        </div> -->
+
+        <!-- Gallery List -->
+        <!-- <ul>
+            <li class="g_list" onclick="currentSlide(1)"></li>
+            <li class="g_list" onclick="currentSlide(2)"></li>
+            <li class="g_list" onclick="currentSlide(3)"></li>
+            <li class="g_list" onclick="currentSlide(4)"></li>
+        </ul>
+    </div> -->
+
+
+
+
+    <!-- Wrapper Within Parallax Section -->
+    <section class="gallery_container">
+        <div class="showHidden block_one">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>A</h2>
             </div>
         </div>
 
-        <!-- Gallery List -->
-        <ul>
-            <li class="g_list"></li>
-            <li class="g_list"></li>
-            <li class="g_list"></li>
-            <li class="g_list"></li>
-        </ul>
+        <div class="showHidden block_two">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Nother</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_three">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Picture!</h2>
+            </div>
+        </div>
+        <div class="showHidden block_four">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>A</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_five">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Nother</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_six">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Picture!</h2>
+            </div>
+        </div>
+        <div class="showHidden block_seven">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>A</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_eight">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Nother</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_nine">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Picture!</h2>
+            </div>
+        </div>
+        <div class="showHidden block_ten">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>A</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_eleven">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Nother</h2>
+            </div>
+        </div>
+
+        <div class="showHidden block_twelve">
+            <div class="block_img block_image_style"></div>
+            <div class="block_text">
+                <h2>Picture!</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hidden Window Container -->
+    <div id="hiddenWindow" class="hiddenWindow_container">
+
+        <!-- Hidden Window -->
+        <div class="hiddenWindow_wrapper">
+            <span class="closeButton">&times;</span>
+    
+            <!-- Image(s) -->
+            <img src="images/portfolioGallery/gal_1.jpg" alt="img1" srcset="">
+            <img src="images/portfolioGallery/gal_4.jpg" alt="img2" srcset="">
+            <img src="images/portfolioGallery/gal_8.jpg" alt="img3" srcset="">
+        </div>
     </div>
+
+
 
     <!-- backToTop container -->
     <div id="backToTop" onclick="scrollUp()">
@@ -133,7 +258,7 @@
                 <h5>Company</h5>
                 <ul>
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="about.html">Contact us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                     <li><a href="about.html">Blog</a></li>
                     <li><a href="about.html">Testimonials</a></li>
                     <li><a href="about.html">Affiliate program</a></li>

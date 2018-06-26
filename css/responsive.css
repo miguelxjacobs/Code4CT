@@ -39,7 +39,7 @@
 
   .iconSection_container {
     display: grid;
-    height: 720px;
+    height: 800px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
@@ -337,6 +337,38 @@
       height: 100%;
       width: 100%; }
 
+  .stats_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    top: 80px;
+    background-color: black;
+    padding: 50px 0 20px 0; }
+    .stats_container .counter {
+      height: 400px;
+      margin: auto;
+      width: 120px;
+      height: 120px;
+      padding: 5px;
+      color: white;
+      text-align: center; }
+      .stats_container .counter .p_style {
+        padding-top: 10px;
+        font-size: .8em; }
+    .stats_container .stats_one {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .stats_container .stats_two {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .stats_container .stats_three {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .stats_container .stats_four {
+      grid-column: 5/6;
+      grid-row: 1/2; }
+
   /* ----- COURSES PAGE ----- */
   /* ----- PORTFOLIO PAGE ----- */
   .lightbox_container {
@@ -480,7 +512,7 @@
 
   .iconSection_container {
     display: grid;
-    height: 500px;
+    height: 400px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
@@ -494,6 +526,9 @@
       margin-top: 0; }
       .iconSection_container .iconSection h3, .iconSection_container .iconSection_text h3 {
         font-size: 1.3em;
+        padding: 0 20px; }
+      .iconSection_container .iconSection p, .iconSection_container .iconSection_text p {
+        font-size: .7em;
         padding: 0 20px; }
     .iconSection_container .screen {
       grid-column: 2/3;
@@ -512,8 +547,6 @@
       grid-row: 2/3; }
       .iconSection_container .screen_text p {
         padding: 0 40px; }
-      .iconSection_container .screen_text p {
-        padding: 0 60px; }
     .iconSection_container .speaker {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -531,8 +564,6 @@
       grid-row: 2/3; }
       .iconSection_container .speaker_text p {
         padding: 0 40px; }
-      .iconSection_container .speaker_text p {
-        padding: 0 60px; }
     .iconSection_container .wrench {
       grid-column: 4/5;
       grid-row: 1/2;
@@ -550,8 +581,6 @@
       grid-row: 2/3; }
       .iconSection_container .wrench_text p {
         padding: 0 40px; }
-      .iconSection_container .wrench_text p {
-        padding: 0 60px; }
     .iconSection_container .document {
       grid-column: 5/6;
       grid-row: 1/2;
@@ -569,8 +598,6 @@
       grid-row: 2/3; }
       .iconSection_container .document_text p {
         padding: 0 40px; }
-      .iconSection_container .document_text p {
-        padding: 0 60px; }
 
   .portfolioSection_container {
     display: grid;

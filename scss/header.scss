@@ -44,7 +44,7 @@
 }
 
 //Disables desktop nav and searchbar
-nav {
+#desktop_nav {
     display: none;
 }
 .search_container {
@@ -54,7 +54,7 @@ nav {
 // Navbar
 #nav_wrapper {
     //Enable bottom display after functionality added
-    display: none;
+    display: block;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
     position: fixed;
@@ -62,7 +62,7 @@ nav {
     z-index: 4;
     width: 100%;
     height: 100%;
-    margin-top: -710px;
+    margin-top: -1210px;
     nav {
         grid-column: 2/9;
         height: 390px;
@@ -137,10 +137,14 @@ nav {
             display: none;
         }
     }
+    // #nav_wrapper {
+    //     //Disables bottom display after functionality added
+    //     display: none;
+    // }
 
     //New navbar specifically for desktop view
     // Desktop nav and search
-    nav {
+    #desktop_nav {
         display: block;
         grid-column: 3/6;
         grid-row: 1/2;
