@@ -936,7 +936,7 @@
 // }
 
 
-
+//Gallery Container
 .gallery_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -970,6 +970,7 @@
         }
     }
 }
+    //Image Containers
     .one {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -1043,13 +1044,7 @@
         height: 100%;
     }
 
-#show_hidden {
-    display: block;
-    height: 100px;
-    width: 200px;
-    z-index: 10;
-}
-
+//Hidden Window Container
 .hiddenWindow_container {
     display: none;
     position: fixed;
@@ -1062,9 +1057,10 @@
     overflow: none;
     background-color: rgba(0,0,0,0.5);
     margin: auto;
+    //Hidden Window Structure
     .hiddenWindow_wrapper {
-        width: 300px;
-        height: 200px;
+        width: 70%;
+        height: 30%;
         background-color: rgba(0,0,0,0.8);
         margin: auto;
         padding: 20px;
@@ -1072,7 +1068,7 @@
         opacity: 0;
         animation: load 1s forwards;
         #img_holder {
-            width: 80%;
+            width: 100%;
             height: 80%;
             img {
                 margin: auto;
