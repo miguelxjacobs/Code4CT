@@ -55,12 +55,15 @@ function scrollUp() {
         left: 0,
         behavior: 'smooth'
     });
+    window.querySelector('body').scrollBy({
+        behavior: 'smooth'
+    });
 }
 
 // -------- Display Hidden Window Button ----------
 
 var hiddenWindow = document.getElementById('hiddenWindow');
-var showHidden = document.getElementsByClassName('showHidden')[0];
+var showHidden = document.getElementsByClassName('image_block')[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var closeButton = document.getElementsByClassName('closeButton')[0]; 
 
 //Clicking the "showHidden" button displays the Hidden Window
