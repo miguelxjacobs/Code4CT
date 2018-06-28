@@ -60,25 +60,3 @@ function scrollUp() {
     });
 }
 
-// -------- Display Hidden Window Button ----------
-
-var hiddenWindow = document.getElementById('hiddenWindow');
-var showHidden = document.getElementsByClassName('image_block')[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-var closeButton = document.getElementsByClassName('closeButton')[0]; 
-
-//Clicking the "showHidden" button displays the Hidden Window
-showHidden.onclick = function() {
-    hiddenWindow.style.display = "block";
-}
-
-//Clicking the (x) button closes the Hidden Window
-closeButton.onclick = function() {
-    hiddenWindow.style.display = "none";
-}
-
-//Allows user to click outside of the hidden window to close Hidden Window
-window.onclick = function(event) {
-    if (event.target == hiddenWindow) {
-        hiddenWindow.style.display = "none";
-    }
-}

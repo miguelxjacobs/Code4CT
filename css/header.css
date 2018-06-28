@@ -67,7 +67,9 @@
       #nav_wrapper nav ul li {
         display: block;
         height: 28px;
+        width: 90%;
         line-height: 35px;
+        text-align: left;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
         #nav_wrapper nav ul li a {
           text-decoration: none;

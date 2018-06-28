@@ -186,6 +186,7 @@
     .teamSection_container .infoOne {
       grid-column: 2/3;
       grid-row: 2/3;
+      font-size: 1.5em;
       padding: 50px 0 0 65px;
       text-align: left; }
       .teamSection_container .infoOne hr {
@@ -212,6 +213,7 @@
     .teamSection_container .infoTwo {
       grid-column: 1/2;
       grid-row: 3/4;
+      font-size: 1.5em;
       padding: 50px 0 0 65px;
       text-align: left; }
       .teamSection_container .infoTwo hr {
@@ -238,6 +240,7 @@
     .teamSection_container .infoThree {
       grid-column: 2/3;
       grid-row: 4/5;
+      font-size: 1.5em;
       padding: 50px 0 0 65px;
       text-align: left; }
       .teamSection_container .infoThree hr {
@@ -264,6 +267,7 @@
     .teamSection_container .infoFour {
       grid-column: 1/2;
       grid-row: 5/6;
+      font-size: 1.5em;
       padding: 50px 0 0 65px;
       text-align: left; }
       .teamSection_container .infoFour hr {
@@ -444,8 +448,10 @@
           background-color: #e38f84; }
 
   .hiddenWindow_container .hiddenWindow_wrapper {
-    width: 80%;
+    width: 60%;
     height: 60%; }
+    .hiddenWindow_container .hiddenWindow_wrapper #img_holder {
+      height: 90%; }
 
   /* ----- CONTACT PAGE ----- */
   .form_container {
@@ -484,13 +490,16 @@
     grid-template-rows: repeat(5, 1fr); }
     .lore_container .lore {
       grid-column: 2/6;
-      grid-row: 1/6; }
+      grid-row: 1/6;
+      padding-left: 150px;
+      padding-right: 150px;
+      font-size: 1.2em; }
     .lore_container #sc_btn {
       grid-column: 3/4;
-      grid-row: 3/4; }
+      grid-row: 4/5; }
     .lore_container #au_btn {
       grid-column: 4/5;
-      grid-row: 3/4; }
+      grid-row: 4/5; }
 
   .whoWeAre_container {
     display: grid;
@@ -652,7 +661,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 900px;
+    height: 1200px;
     padding-bottom: 30px;
     position: relative;
     top: 80px; }
@@ -805,6 +814,13 @@
       grid-row: 1/2; }
     .counter_container .hours {
       grid-column: 5/6;
-      grid-row: 1/2; } }
+      grid-row: 1/2; }
+
+  /* ----- PORTFOLIO PAGE ----- */
+  .hiddenWindow_container .hiddenWindow_wrapper {
+    width: 60%;
+    height: 70%; }
+    .hiddenWindow_container .hiddenWindow_wrapper #img_holder {
+      height: 90%; } }
 
 /*# sourceMappingURL=responsive.css.map */

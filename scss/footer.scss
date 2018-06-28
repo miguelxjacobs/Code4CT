@@ -221,6 +221,9 @@
                     padding: 10px 10px 10px 0;
                 }
             }
+            ul {                
+                text-align: left;
+            }
         }
         .footer_absolute {
             #copyright {
@@ -244,20 +247,23 @@
         }
         .footer_content {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(8, 1fr);
             grid-template-rows: 1fr;
             height: 400px;
             .contact {
-                grid-column: 4/7;
+                grid-column: 5/9;
                 padding: 50px 220px 50px 0;
             }
             .company {
-                grid-column: 2/3;
+                grid-column: 3/4;
                 padding-left: 30px;
             }
             .support {
-                grid-column: 3/4;
+                grid-column: 4/5;
                 padding-left: 5px;
+            }
+            ul {                
+                text-align: left;
             }
         }
         .footer_absolute {
@@ -270,7 +276,7 @@
                 margin: 20px 0 20px 35px;
             }
             #followUs {
-                grid-column: 3/7;
+                grid-column: 4/7;
                 margin: 20px 0 20px 265px;
             }
         }

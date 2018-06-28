@@ -1,25 +1,19 @@
+// -------- Slider Transition ----------
+let slideIndex = 0;
+showSlides();
 
-
-// -------- slider buttons ----------
-var slideIndex = 1;
-
-showDivs(slideIndex += n);
-
-function showDivs(n) {
-    var i;
-
-    var j = document.getElementsByClassName('bg_image');
-
-    if(n > i.length) {
-        slideIndex = 1;
+function showSlides() {
+    let i;
+    
+    //Iteration hiding images not in view
+    const slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
     }
-
-    if(n < 1) {
-        slideIndex = j.length
-    }
-
-    for(i = 0; i < j.length; i++) {
-        j[i].style.display = "none";
-    }
-    j[slideIndex - 1].style.display = "block";
+    //Iteration enabling slide function
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    // Change image every 8 seconds
+    setTimeout(showSlides, 8000); 
 }
