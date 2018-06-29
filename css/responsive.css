@@ -374,6 +374,12 @@
       grid-row: 1/2; }
 
   /* ----- COURSES PAGE ----- */
+  .wrapper {
+    padding: 20px; }
+    .wrapper .courses {
+      height: 400px;
+      width: 600px; }
+
   /* ----- PORTFOLIO PAGE ----- */
   .lightbox_container {
     display: grid;

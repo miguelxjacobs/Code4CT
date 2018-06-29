@@ -463,6 +463,13 @@
     }
 
     /* ----- COURSES PAGE ----- */
+    .wrapper {
+        padding: 20px;
+        .courses {
+            height: 400px;
+            width: 600px;
+        }
+    }
 
 
     /* ----- PORTFOLIO PAGE ----- */
