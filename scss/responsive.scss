@@ -933,4 +933,204 @@
             }
         }
     }
+
+    /* ----- PORTFOLIO PAGE ----- */
+    .intro_coding_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    position: relative;
+    top: 80px;
+        .icons {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    .wrapper {
+        // padding: 20px;
+        .courses {
+            height: 300px;
+            width: 200px;
+            text-align: center;
+            font-size: .7em;
+            line-height: 1.8em;
+            padding: 0;
+            box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+            margin: auto;
+        .title {
+            font-size: 1.7em;
+            padding: 20px;
+        }
+        .brief {        
+            padding: 10px;
+        }
+        .price {
+            padding-bottom: 20px;
+        }
+        .add {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            margin: auto;
+            border-radius: 7px;
+            border: 1px solid black;
+            &:hover {
+                cursor: pointer;
+                background-color: #ee534f
+            }
+        }
+    }
+    //code
+    .desktop {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .intro_coding_web {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .create_with_web {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .getting_started_web {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    //music
+    .music {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .intro_coding_music {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .create_with_music {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    //animation
+    .animation {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .intro_coding_animation {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .create_with_animation {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    //beginner javascript
+    .beginner_js {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .beginner_javascript {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    //beginner front-end development
+    .beginner_front {
+        grid-column: 3/4;
+        grid-row: 5/6;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .beginner_front_end {
+        grid-column: 4/5;
+        grid-row: 5/6;
+    }
+    //beginner python
+    .beginner_py {
+        grid-column: 4/5;
+        grid-row: 6/7;
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .beginner_python {
+    }
+    //beginner full stack javascript
+    .full_stack_js {
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .full_stack_javascript {
+    }
+    //website deployment
+    .web_deploy {
+        margin: auto;
+        height: 100px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .web_deployment {
+        grid-column: 2/3;
+        grid-row: 10/11;
+    }
+    }
+    
 }
