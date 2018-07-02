@@ -176,22 +176,23 @@
         grid-column: 6/9;
         grid-row: 1/2;
         margin: auto;
+        outline: 0;
         .searchBox {
             height: 34px;
             width: 200px;
             border-radius: 5px 0 0 5px;
-            border: 0.5px solid rgba(0,0,0, 0.5);
+            border: 1px solid rgba(0,0,0, 0.5);
         }
         ::placeholder {
             padding-left: 12px;
             color: gray;
         }
         .search {
-            height: 35px;
+            height: 36px;
             width: 40px;
             border-radius: 0 5px 5px 0;
             background: none;
-            border: 0.5px solid gray;
+            border: 1px solid gray;
             margin-left: -5.5px;
             img {
                 width: 35%;

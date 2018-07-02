@@ -22,6 +22,7 @@
     // font-family: 'Raleway', Helvetica, sans-serif;
     font-family: 'Roboto Condensed', Helvetica, Arial, Lucida, serif;
     transition: 0.5s;
+    outline: 0;
 }
 //button style
 @mixin buttonStyle {    
@@ -859,6 +860,151 @@
                 margin: auto;
             }
         }
+        //code
+        .desktop {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                height: 100%;
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .intro_coding_web {
+            grid-column: 1/2;
+            grid-row: 2/3
+        }
+        .create_with_web {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .getting_started_web {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        //music
+        .music {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .intro_coding_music {
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+        .create_with_music {
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+        //animation
+        .animation {
+            grid-column: 1/2;
+            grid-row: 8/9;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .intro_coding_animation {
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+        .create_with_animation {
+            grid-column: 1/2;
+            grid-row: 10/11;
+        }
+        //beginner javascript
+        .beginner_js {
+            grid-column: 1/2;
+            grid-row: 11/12;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .beginner_javascript {
+            grid-column: 1/2;
+            grid-row: 12/13;
+        }
+        //beginner front-end development
+        .beginner_front {
+            grid-column: 1/2;
+            grid-row: 13/14;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .beginner_front_end {
+            grid-column: 1/2;
+            grid-row: 14/15;
+        }
+        //beginner python
+        .beginner_py {
+            grid-column: 1/2;
+            grid-row: 15/16;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .beginner_python {
+            grid-column: 1/2;
+            grid-row: 16/17;
+        }
+        //beginner full stack javascript
+        .full_stack_js {
+            grid-column: 1/2;
+            grid-row: 17/18;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .full_stack_javascript {
+            grid-column: 1/2;
+            grid-row: 18/19;
+        }
+        //website deployment
+        .web_deploy {
+            grid-column: 1/2;
+            grid-row: 19/20;
+            margin: auto;
+            height: 100px;
+            width: 150px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        .web_deployment {
+            grid-column: 1/2;
+            grid-row: 20/21;
+        }
     }
     .wrapper {
         // padding: 20px;
@@ -892,160 +1038,11 @@
             border: 1px solid black;
             &:hover {
                 cursor: pointer;
-                background-color: #ee534f
+                background-color: #ee534f;
+                color: white;
+                border: 1px solid white;
             }
         }
-    }
-    //code
-    .desktop {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .intro_coding_web {
-        grid-column: 1/2;
-        grid-row: 2/3
-    }
-    .create_with_web {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .getting_started_web {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    //music
-    .music {
-        grid-column: 1/2;
-        grid-row: 5/6;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .intro_coding_music {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-    .create_with_music {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-    //animation
-    .animation {
-        grid-column: 1/2;
-        grid-row: 8/9;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .intro_coding_animation {
-        grid-column: 1/2;
-        grid-row: 9/10;
-    }
-    .create_with_animation {
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-    //beginner javascript
-    .beginner_js {
-        grid-column: 1/2;
-        grid-row: 11/12;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .beginner_javascript {
-        grid-column: 1/2;
-        grid-row: 13/14;
-    }
-    //beginner front-end development
-    .beginner_front {
-        grid-column: 1/2;
-        grid-row: 14/15;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .beginner_front_end {
-        grid-column: 1/2;
-        grid-row: 15/16;
-    }
-    //beginner python
-    .beginner_py {
-        grid-column: 1/2;
-        grid-row: 16/17;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .beginner_python {
-        grid-column: 1/2;
-        grid-row: 17/18;
-    }
-    //beginner full stack javascript
-    .full_stack_js {
-        grid-column: 1/2;
-        grid-row: 16/17;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .full_stack_javascript {
-        grid-column: 1/2;
-        grid-row: 17/18;
-    }
-    //website deployment
-    .web_deploy {
-        grid-column: 1/2;
-        grid-row: 18/19;
-        margin: auto;
-        height: 100px;
-        width: 150px;
-        img {
-            height: 100%;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .web_deployment {
-        grid-column: 1/2;
-        grid-row: 19/20;
     }
 }
 

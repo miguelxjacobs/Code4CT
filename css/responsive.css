@@ -832,23 +832,78 @@
   /* ----- PORTFOLIO PAGE ----- */
   .intro_coding_wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 10px;
     position: relative;
     top: 80px; }
-    .intro_coding_wrapper .icons {
-      height: 100%;
-      width: 100%;
-      margin: auto;
-      height: 100px;
-      width: 150px; }
-      .intro_coding_wrapper .icons img {
-        width: 100%;
-        margin: auto; }
+    .intro_coding_wrapper .desktop {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .intro_coding_wrapper .desktop img {
+        height: 140px; }
+    .intro_coding_wrapper .intro_coding_web {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+    .intro_coding_wrapper .create_with_web {
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    .intro_coding_wrapper .getting_started_web {
+      grid-column: 2/3;
+      grid-row: 4/5; }
+    .intro_coding_wrapper .music {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .intro_coding_wrapper .intro_coding_music {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+    .intro_coding_wrapper .create_with_music {
+      grid-column: 3/4;
+      grid-row: 3/4; }
+    .intro_coding_wrapper .animation {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .intro_coding_wrapper .intro_coding_animation {
+      grid-column: 4/5;
+      grid-row: 2/3; }
+    .intro_coding_wrapper .create_with_animation {
+      grid-column: 4/5;
+      grid-row: 3/4; }
+    .intro_coding_wrapper .beginner_js {
+      grid-column: 2/3;
+      grid-row: 5/6; }
+    .intro_coding_wrapper .beginner_javascript {
+      grid-column: 2/3;
+      grid-row: 6/7; }
+    .intro_coding_wrapper .beginner_front {
+      grid-column: 3/4;
+      grid-row: 5/6; }
+    .intro_coding_wrapper .beginner_front_end {
+      grid-column: 3/4;
+      grid-row: 6/7; }
+    .intro_coding_wrapper .beginner_py {
+      grid-column: 4/5;
+      grid-row: 5/6; }
+    .intro_coding_wrapper .beginner_python {
+      grid-column: 4/5;
+      grid-row: 6/7; }
+    .intro_coding_wrapper .full_stack_js {
+      grid-column: 2/3;
+      grid-row: 7/8; }
+      .intro_coding_wrapper .full_stack_js img {
+        height: 190px; }
+    .intro_coding_wrapper .full_stack_javascript {
+      grid-column: 2/3;
+      grid-row: 8/9; }
+    .intro_coding_wrapper .web_deploy {
+      grid-column: 3/4;
+      grid-row: 7/8; }
+    .intro_coding_wrapper .web_deployment {
+      grid-column: 3/4;
+      grid-row: 8/9; }
 
   .wrapper .courses {
-    height: 300px;
+    height: 350px;
     width: 200px;
     text-align: center;
     font-size: .7em;
@@ -872,111 +927,6 @@
       border: 1px solid black; }
       .wrapper .courses .add:hover {
         cursor: pointer;
-        background-color: #ee534f; }
-  .wrapper .desktop {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .desktop img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .intro_coding_web {
-    grid-column: 2/3;
-    grid-row: 2/3; }
-  .wrapper .create_with_web {
-    grid-column: 2/3;
-    grid-row: 3/4; }
-  .wrapper .getting_started_web {
-    grid-column: 2/3;
-    grid-row: 5/6; }
-  .wrapper .music {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .music img {
-      width: 100%;
-      margin: auto; }
-  .wrapper .intro_coding_music {
-    grid-column: 3/4;
-    grid-row: 2/3; }
-  .wrapper .create_with_music {
-    grid-column: 3/4;
-    grid-row: 3/4; }
-  .wrapper .animation {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .animation img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .intro_coding_animation {
-    grid-column: 4/5;
-    grid-row: 2/3; }
-  .wrapper .create_with_animation {
-    grid-column: 4/5;
-    grid-row: 3/4; }
-  .wrapper .beginner_js {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .beginner_js img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .beginner_javascript {
-    grid-column: 2/3;
-    grid-row: 6/7; }
-  .wrapper .beginner_front {
-    grid-column: 3/4;
-    grid-row: 5/6;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .beginner_front img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .beginner_front_end {
-    grid-column: 4/5;
-    grid-row: 5/6; }
-  .wrapper .beginner_py {
-    grid-column: 4/5;
-    grid-row: 6/7;
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .beginner_py img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .full_stack_js {
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .full_stack_js img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .web_deploy {
-    margin: auto;
-    height: 100px;
-    width: 150px; }
-    .wrapper .web_deploy img {
-      height: 100%;
-      width: 100%;
-      margin: auto; }
-  .wrapper .web_deployment {
-    grid-column: 2/3;
-    grid-row: 10/11; } }
+        background-color: #ee534f; } }
 
 /*# sourceMappingURL=responsive.css.map */
