@@ -28,9 +28,9 @@ function progressSimulation() {
 
     canvas.lineWidth = 2;
 
-    canvas.fillStyle = '#ee534f';
+    canvas.fillStyle = '#e38f84';
 
-    canvas.strokeStyle = '#ee534f';
+    canvas.strokeStyle = '#e38f84';
 
     canvas.textAlign = 'center';
 
@@ -59,8 +59,8 @@ let simulation_two = setInterval(prog_sim_two, 50);
 function prog_sim_two() {
     canvas_two.clearRect(0,0, canvasWidth, canvasHeight);
     canvas_two.lineWidth = 2;
-    canvas_two.fillStyle = '#ee534f';
-    canvas_two.strokeStyle = '#ee534f';
+    canvas_two.fillStyle = '#e38f84';
+    canvas_two.strokeStyle = '#e38f84';
     canvas_two.textAlign = 'center';
     diff = ((count_two / 100) * (Math.PI * 2 * 10)).toFixed(2);
     canvas_two.fillText(count_two + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
@@ -78,8 +78,8 @@ let simulation_three = setInterval(prog_sim_three, 50);
 function prog_sim_three() {
     canvas_three.clearRect(0,0, canvasWidth, canvasHeight);
     canvas_three.lineWidth = 2;
-    canvas_three.fillStyle = '#ee534f';
-    canvas_three.strokeStyle = '#ee534f';
+    canvas_three.fillStyle = '#e38f84';
+    canvas_three.strokeStyle = '#e38f84';
     canvas_three.textAlign = 'center';
     diff = ((count_three / 100) * (Math.PI * 2 * 10)).toFixed(2);
     canvas_three.fillText(count_three + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);
@@ -97,8 +97,8 @@ let simulation_four = setInterval(prog_sim_four, 50);
 function prog_sim_four() {
     canvas_four.clearRect(0,0, canvasWidth, canvasHeight);
     canvas_four.lineWidth = 2;
-    canvas_four.fillStyle = '#ee534f';
-    canvas_four.strokeStyle = '#ee534f';
+    canvas_four.fillStyle = '#e38f84';
+    canvas_four.strokeStyle = '#e38f84';
     canvas_four.textAlign = 'center';
     diff = ((count_four / 100) * (Math.PI * 2 * 10)).toFixed(2);
     canvas_four.fillText(count_four + '%', (canvasWidth * 0.5), ((canvasHeight * 0.5) + 2), canvasWidth);

@@ -1,4 +1,5 @@
 /* Responsive stylesheet code4ct by Miguel Jacobs*/
+/* Mixins stylesheet code4ct by Miguel Jacobs*/
 @media only screen and (min-width: 768px) {
   /* ----- INDEX PAGE ----- */
   .lore_container {
@@ -39,7 +40,7 @@
 
   .iconSection_container {
     display: grid;
-    height: 800px;
+    height: 900px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
@@ -161,7 +162,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 1450px;
+    height: 1550px;
     padding-bottom: 30px;
     position: relative;
     top: 80px; }
@@ -345,6 +346,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
+    height: 200px;
     position: relative;
     top: 80px;
     background-color: black;
@@ -459,6 +461,16 @@
     .hiddenWindow_container .hiddenWindow_wrapper #img_holder {
       height: 90%; }
 
+  /* ----- COURSES PAGE ----- */
+  .shopping_container {
+    width: 45%; }
+
+  .wrapper {
+    padding: 20px; }
+    .wrapper .courses {
+      height: 400px;
+      width: 600px; }
+
   /* ----- CONTACT PAGE ----- */
   .form_container {
     grid-template-columns: repeat(2, 1fr);
@@ -531,7 +543,7 @@
 
   .iconSection_container {
     display: grid;
-    height: 400px;
+    height: 470px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
@@ -544,10 +556,10 @@
       margin: auto;
       margin-top: 0; }
       .iconSection_container .iconSection h3, .iconSection_container .iconSection_text h3 {
-        font-size: 1.3em;
+        font-size: 1.35em;
         padding: 0 20px; }
       .iconSection_container .iconSection p, .iconSection_container .iconSection_text p {
-        font-size: .7em;
+        font-size: .9em;
         padding: 0 20px; }
     .iconSection_container .screen {
       grid-column: 2/3;
@@ -667,15 +679,17 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 1200px;
+    height: 1750px;
     padding-bottom: 30px;
     position: relative;
-    top: 80px; }
+    top: 80px;
+    margin-top: -300px; }
     .teamSection_container .teamSection_text {
       grid-column: 2/6;
       grid-row: 1/2;
       text-align: left;
-      padding: 40px 0 20px 0; }
+      padding: 40px 0 20px 0;
+      margin-top: 300px; }
       .teamSection_container .teamSection_text h3 {
         padding-left: 0; }
       .teamSection_container .teamSection_text p {
@@ -829,19 +843,27 @@
     .hiddenWindow_container .hiddenWindow_wrapper #img_holder {
       height: 90%; }
 
-  /* ----- PORTFOLIO PAGE ----- */
+  /* ----- COURSES PAGE ----- */
+  .shopping_container {
+    width: 30%; }
+
   .intro_coding_wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    height: 1800px;
     grid-gap: 10px;
     position: relative;
-    top: 80px; }
+    top: 80px;
+    font-size: .8em; }
     .intro_coding_wrapper .desktop {
       grid-column: 2/3;
-      grid-row: 1/2; }
+      grid-row: 1/2;
+      height: 60px;
+      width: 60px; }
       .intro_coding_wrapper .desktop img {
-        height: 140px; }
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .intro_coding_web {
       grid-column: 2/3;
       grid-row: 2/3; }
@@ -853,7 +875,12 @@
       grid-row: 4/5; }
     .intro_coding_wrapper .music {
       grid-column: 3/4;
-      grid-row: 1/2; }
+      grid-row: 1/2;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .music img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .intro_coding_music {
       grid-column: 3/4;
       grid-row: 2/3; }
@@ -862,7 +889,12 @@
       grid-row: 3/4; }
     .intro_coding_wrapper .animation {
       grid-column: 4/5;
-      grid-row: 1/2; }
+      grid-row: 1/2;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .animation img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .intro_coding_animation {
       grid-column: 4/5;
       grid-row: 2/3; }
@@ -871,39 +903,62 @@
       grid-row: 3/4; }
     .intro_coding_wrapper .beginner_js {
       grid-column: 2/3;
-      grid-row: 5/6; }
+      grid-row: 5/6;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .beginner_js img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .beginner_javascript {
       grid-column: 2/3;
       grid-row: 6/7; }
     .intro_coding_wrapper .beginner_front {
       grid-column: 3/4;
-      grid-row: 5/6; }
+      grid-row: 5/6;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .beginner_front img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .beginner_front_end {
       grid-column: 3/4;
       grid-row: 6/7; }
     .intro_coding_wrapper .beginner_py {
       grid-column: 4/5;
-      grid-row: 5/6; }
+      grid-row: 5/6;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .beginner_py img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .beginner_python {
       grid-column: 4/5;
       grid-row: 6/7; }
     .intro_coding_wrapper .full_stack_js {
       grid-column: 2/3;
-      grid-row: 7/8; }
+      grid-row: 7/8;
+      height: 60px;
+      width: 60px; }
       .intro_coding_wrapper .full_stack_js img {
-        height: 190px; }
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .full_stack_javascript {
       grid-column: 2/3;
       grid-row: 8/9; }
     .intro_coding_wrapper .web_deploy {
       grid-column: 3/4;
-      grid-row: 7/8; }
+      grid-row: 7/8;
+      height: 60px;
+      width: 60px; }
+      .intro_coding_wrapper .web_deploy img {
+        height: 100%;
+        width: 100%; }
     .intro_coding_wrapper .web_deployment {
       grid-column: 3/4;
       grid-row: 8/9; }
 
   .wrapper .courses {
-    height: 350px;
+    height: 250px;
     width: 200px;
     text-align: center;
     font-size: .7em;
@@ -912,21 +967,30 @@
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
     margin: auto; }
     .wrapper .courses .title {
-      font-size: 1.7em;
+      font-size: 1.2em;
       padding: 20px; }
     .wrapper .courses .brief {
       padding: 10px; }
     .wrapper .courses .price {
       padding-bottom: 20px; }
     .wrapper .courses .add {
-      width: 100px;
-      height: 50px;
-      line-height: 50px;
+      width: 65px;
+      height: 30px;
+      line-height: 30px;
       margin: auto;
       border-radius: 7px;
       border: 1px solid black; }
       .wrapper .courses .add:hover {
         cursor: pointer;
         background-color: #ee534f; } }
+@media only screen and (min-width: 1440px) {
+  .teamSection_container {
+    height: 1650px;
+    font-size: 1.2em; }
+    .teamSection_container .teamSection_text p {
+      font-size: 1em; }
+
+  .shopping_container {
+    width: 30%; } }
 
 /*# sourceMappingURL=responsive.css.map */

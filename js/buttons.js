@@ -9,7 +9,7 @@ const nav = document.getElementById('nav_wrapper');
 let open = true;
 const menu = document.getElementsByClassName('hamburger_icon')[0];
 //Displays the navBar
-menu.onclick = function() {
+menu.onmouseover = function() {
     if (open == true){
         nav.style.display = "grid";
         nav.style.marginTop = "0";
@@ -27,6 +27,40 @@ window.onclick = function(event) {
         nav.style.marginTop = "-710px";
         open = true;
     }
+}
+
+// ---------- cart menu ----------
+//Assigning cart wrapper element to variable
+const shop = document.getElementsByClassName('shopping_container')[0];
+//Assigning cart icom element to variable
+
+let display = true;
+const cart_icon = document.getElementsByClassName('cart_icon')[0];
+
+// **Allows for both click and hover to be used similtaneously
+//Displays the shopping cart
+cart_icon.onmouseover = function() {
+    if (display == true){
+        shop.style.display = "grid";
+        shop.style.marginRight = "0";
+        display = false;
+    }
+    else {
+        shop.style.marginRight = "-2500px";
+        display = true;
+    }    
+}
+//Enables click function (especially appropriate for mobile view)
+cart_icon.onclick = function() {
+    if (display == true){
+        shop.style.display = "grid";
+        shop.style.marginRight = "0";
+        display = false;
+    }
+    else {
+        shop.style.marginRight = "-2500px";
+        display = true;
+    }    
 }
 
 // -------- backToTop button ----------

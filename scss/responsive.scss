@@ -1,98 +1,7 @@
 /* Responsive stylesheet code4ct by Miguel Jacobs*/
 
-//Fix for grid structure due to "position: fixed;" in header tag
-@mixin positionFix {
-    position: relative;
-    top: 80px;
-}
-
-//button style
-@mixin buttonStyle {    
-    width: 150px;
-    height: 50px;
-    font-size: 1.45em;
-    color: white;
-    border-radius: 5px;
-    margin: auto;
-}
-
-@mixin directionBtn {
-    height: 40px;
-    width: 40px;
-    background-color: rgba(0,0,0,0.3);
-    border: 0.5px solid black;
-    border-radius: 25px;
-    box-shadow: 0 0 10px #e38f8450;
-    z-index: 5;
-    padding: 5px;
-}
-
-//mixin adding style and animation
-@mixin enlarge {        
-    animation: animate .5s linear 1;
-    @keyframes animate {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.5);
-        }
-        100% {
-            transform: scale(1);
-        }                        
-    }
-}
-
-//icons and text
-@mixin iconsAndText {
-    padding-top: 25px;
-    height: 50px;
-    width: 165px;
-    .icon {
-        height: 100%;
-        width: 40%;
-    }
-}
-
-//padding
-@mixin padding {        
-    p {
-        padding: 0 40px;
-    }
-}
-
-//team positioning
-@mixin teamPositioning {
-    hr {
-        margin: 10px 0 10px 10px;
-        width: 50%;
-    }
-    &:hover {        
-        hr {
-            margin: 10px 0 10px 10px;
-            width: 70%;        
-        }
-    }
-    .teamMemberName {
-        padding: 10px;
-    }
-    .teamMemberPosition {
-        padding: 10px;
-    }
-    .teamMemberDetails {
-        padding: 20px 30px 20px 10px;
-        font-size: .6em;
-        line-height: 1.5em;
-    }
-}
-//image Sizing
-@mixin imageSizing {        
-    height: 150px;
-    width: 150px;
-    padding: 0;
-    margin-top: 60px;
-}
-
+// Partial Styling
+@import 'mixins';
 
 // ---------------Tab View Responsiveness
 @media only screen and (min-width: 768px) {
@@ -148,7 +57,7 @@
 //iconSection container
 .iconSection_container {
     display: grid;
-    height: 800px;
+    height: 900px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
@@ -276,7 +185,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 1450px;
+    height: 1550px;
     padding-bottom: 30px;
     @include positionFix;
     .teamSection_text {
@@ -428,6 +337,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
+        height: 200px;
         @include positionFix;
         background-color: black;
         padding: 50px 0 20px 0;
@@ -562,6 +472,19 @@
             }
         }
     }
+    
+    /* ----- COURSES PAGE ----- */
+    // Shopping cart structure
+    .shopping_container {
+        width: 45%;
+    }
+    .wrapper {
+        padding: 20px;
+        .courses {
+            height: 400px;
+            width: 600px;
+        }
+    }
 
     /* ----- CONTACT PAGE ----- */
     .form_container {
@@ -660,7 +583,7 @@
     //iconSection container
     .iconSection_container {
         display: grid;
-        height: 400px;
+        height: 470px;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
@@ -674,11 +597,11 @@
             margin: auto;
             margin-top: 0;
             h3 {                
-                font-size: 1.3em;
+                font-size: 1.35em;
                 padding: 0 20px;
             }
             p {        
-                font-size: .7em;
+                font-size: .9em;
                 padding: 0 20px
             }
         }
@@ -805,14 +728,16 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        height: 1200px;
+        height: 1750px;
         padding-bottom: 30px;
         @include positionFix;
+        margin-top: -300px;
         .teamSection_text {
             grid-column: 2/6;
             grid-row: 1/2;
             text-align: left;
             padding: 40px 0 20px 0;
+            margin-top: 300px;
             h3 {
                 padding-left: 0;
             }
@@ -933,21 +858,30 @@
             }
         }
     }
-
-    /* ----- PORTFOLIO PAGE ----- */
+    
+    /* ----- COURSES PAGE ----- */
+    // Shopping cart structure
+    .shopping_container {
+        width: 30%;
+    }
     .intro_coding_wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    height: 1800px;
     grid-gap: 10px;
     position: relative;
     top: 80px;
+    font-size: .8em;
         //code
         .desktop {
             grid-column: 2/3;
             grid-row: 1/2;
+            height: 60px;
+            width: 60px;
             img {
-                height: 140px;
+                height: 100%;
+                width: 100%;
             }
         }
         .intro_coding_web {
@@ -966,6 +900,12 @@
         .music {
             grid-column: 3/4;
             grid-row: 1/2;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .intro_coding_music {
             grid-column: 3/4;
@@ -979,6 +919,12 @@
         .animation {
             grid-column: 4/5;
             grid-row: 1/2;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .intro_coding_animation {
             grid-column: 4/5;
@@ -992,6 +938,12 @@
         .beginner_js {
             grid-column: 2/3;
             grid-row: 5/6;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .beginner_javascript {
             grid-column: 2/3;
@@ -1001,6 +953,12 @@
         .beginner_front {
             grid-column: 3/4;
             grid-row: 5/6;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .beginner_front_end {
             grid-column: 3/4;
@@ -1010,6 +968,12 @@
         .beginner_py {
             grid-column: 4/5;
             grid-row: 5/6;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .beginner_python {
             grid-column: 4/5;
@@ -1019,8 +983,11 @@
         .full_stack_js {
             grid-column: 2/3;
             grid-row: 7/8;
+            height: 60px;
+            width: 60px;
             img {
-                height: 190px;
+                height: 100%;
+                width: 100%;
             }
         }
         .full_stack_javascript {
@@ -1031,6 +998,12 @@
         .web_deploy {
             grid-column: 3/4;
             grid-row: 7/8;
+            height: 60px;
+            width: 60px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
         .web_deployment {
             grid-column: 3/4;
@@ -1040,7 +1013,7 @@
     .wrapper {
         // padding: 20px;
         .courses {
-            height: 350px;
+            height: 250px;
             width: 200px;
             text-align: center;
             font-size: .7em;
@@ -1049,7 +1022,7 @@
             box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
             margin: auto;
             .title {
-                font-size: 1.7em;
+                font-size: 1.2em;
                 padding: 20px;
             }
             .brief {        
@@ -1059,9 +1032,9 @@
                 padding-bottom: 20px;
             }
             .add {
-                width: 100px;
-                height: 50px;
-                line-height: 50px;
+                width: 65px;
+                height: 30px;
+                line-height: 30px;
                 margin: auto;
                 border-radius: 7px;
                 border: 1px solid black;
@@ -1072,4 +1045,23 @@
             }
         }
     }    
+}
+
+// ---------------Laptop L View Responsiveness
+@media only screen and (min-width: 1440px) {
+    //meet our team - section
+    .teamSection_container {
+        height: 1650px;
+        font-size: 1.2em;
+        .teamSection_text {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+    
+    // Shopping cart structure
+    .shopping_container {
+        width: 30%;
+    }
 }
