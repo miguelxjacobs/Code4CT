@@ -9,7 +9,7 @@ const nav = document.getElementById('nav_wrapper');
 let open = true;
 const menu = document.getElementsByClassName('hamburger_icon')[0];
 //Displays the navBar
-menu.onmouseover = function() {
+menu.onclick = function() {
     if (open == true){
         nav.style.display = "grid";
         nav.style.marginTop = "0";
@@ -39,7 +39,7 @@ const cart_icon = document.getElementsByClassName('cart_icon')[0];
 
 // **Allows for both click and hover to be used similtaneously
 //Displays the shopping cart
-cart_icon.onmouseover = function() {
+cart_icon.onclick = function() {
     if (display == true){
         shop.style.display = "grid";
         shop.style.marginRight = "0";

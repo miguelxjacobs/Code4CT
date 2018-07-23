@@ -1,75 +1,63 @@
 /* CART FUNCTIONALITY ONLY! */
 
-    let courses = [];
+    // let courses = [];
     let cart = [];
 
     //Add a course
-    function addCourse() {
-        let name = document.getElementsByClassName("title");
+    function addCourse(course, price) {
+        // Creation of item
+        let item = {
+            course: course,
+            price: price,
+        }
 
-        let price = document.getElementsByClassName("price");
+        // Add items to cart
+        if (cart.length !=0) {
+            // Search item in array with loop
+            let check = false;
 
-        //throw into cart at designated tags
-        document.getElementsByClassName("course_name")[0].innerHTML = name;
-        document.getElementsByClassName("course_price")[0].innerHTML = price;
-    }
-
-    //Add course to cart
-    function addCart(course_id) {
-        for (var i = 0; i < courses.length; i++) {
-            if (courses[i].course_id == course_id) {
-                var cartItem = null;
-                for (var k = 0; k < cart.length; k++) {
-                    if (cart[k].product.course_id == courses[i].course_id) {
-                        cartItem = cart[k];
-                        cart[k].product_qty++;
-                        break;
-                    }
-                }
-
-                if (cartItem == null) {
-                    
-                    var cartItem = {
-                        product: courses[i],
-                        product_qty: courses[i].product_qty 
-                    };
-                    cart.push(cartItem);
+            for (let cartItem in cart) {
+                if (cart[cartItem].name === item.name) {
+                    check = true;
                 }
             }
-        }
-        renderCartTable();
-    }
 
-    //Remove a course from cart
-    function subtractQuantity(course_id) {            
-        for (var i = 0; i < cart.length; i++) {
-            if (cart[i].product.course_id == course_id) {
-                cart[i].product_qty--;
-            }
-
-            if (cart[i].product_qty == 0) {
-                cart.splice(i,1);
-            }    
-        }
-        renderCartTable();
-    }
-
-    //Add number of courses
-    function addQuantity(course_id) {            
-        for (var i = 0; i < cart.length; i++) {
-            if (cart[i].product.course_id == course_id) {
-                cart[i].product_qty++;
-            }  
-        }
-        renderCartTable();
-    }
-
-    //Remove a course
-    function removeItem(course_id) {            
-        for (var i = 0; i < cart.length; i++) {
-            if (cart[i].product.course_id == course_id) {
-                cart.splice(i, 1);
+            // If check returns false, item was not found in array
+            if (!check) {
+                cart.push(item);
             }
         }
-        renderCartTable();
+        else {
+            cart.push(item);
+        }
+
+        // Throw course item into variable
+        let itemShow = document.getElementsByClassName('course_name');
+
+        // Prevents item duplication
+        itemShow.innerHTML = "";
+
+        // Display cart item in shopping cart
+        for (let val in cart) {
+            // <p> node
+            var node = document.createElement('p');
+            // text node
+            var textNode = document.createTextNode(cart[val].name);
+
+            //  Append text to <p>
+            node.appendChild(textNode);
+
+            // Append <p> to cart with class="course"
+            itemShow.appendChild(node);
+        }
+    }
+
+    // Clear shopping cart
+    function removeCourse() {
+        
+        let itemName = document.getElementsByClassName('course_name');
+        let itemPrice = document.getElementsByClassName('course_price');
+
+        itemName.innerHTML = "";
+        itemPrice.innerHTML = "";
     }
